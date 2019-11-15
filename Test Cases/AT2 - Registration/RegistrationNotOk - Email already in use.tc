@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>RegistrationNotOk - Email already in use</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>2c93ea50-27b8-4120-83c2-133df106f501</testCaseGuid>
+</TestCaseEntity>
