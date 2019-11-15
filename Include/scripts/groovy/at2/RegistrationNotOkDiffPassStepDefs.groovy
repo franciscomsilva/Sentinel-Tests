@@ -47,25 +47,29 @@ import cucumber.api.java.en.Then
 import cucumber.api.java.en.When
 
 
-class RegistrationNOTOKinvEmailStepDefs {
+class RegistrationNotOkDiffPassStepDefs {
 	/**
 	 * The step definitions below match with Katalon sample Gherkin steps
 	 */
-	@When("I provide an invalid email format")
-	def i_provide_an_invalid_email_format() {
+	@When("I provide an different password and password confirmation")
+	def i_provide_an_different_password_and_password_confirmation() {
 		Mobile.verifyElementExist(findTestObject('Registration Objects/android.widget.EditText0 - E-mail'), 0)
-
-		Mobile.setText(findTestObject('Registration Objects/android.widget.EditText0 - E-mail'), 'invalidEmailFormat', 0)
-
-		Mobile.verifyElementExist(findTestObject('Registration Objects/android.widget.Button0 - CREATE ACCOUNT'), 0)
-
-		Mobile.tap(findTestObject('Registration Objects/android.widget.Button0 - CREATE ACCOUNT'), 0)
 		
-		Mobile.verifyElementExist(findTestObject('Registration Objects/android.widget.TextView0 - Email format must be exampleemail.com'), 0)
-	}
-
-	@Then("I dont create an account successfuly")
-	def i_dont_create_an_account_successfuly() {
-		Mobile.closeApplication()
+		Mobile.setText(findTestObject('Registration Objects/android.widget.EditText0 - E-mail'), 'email300@gmail.com', 0)
+		
+		Mobile.verifyElementExist(findTestObject('Registration Objects/android.widget.EditText0 - Password'), 0)
+		
+		Mobile.setText(findTestObject('Registration Objects/android.widget.EditText0 - Password'), 'password1!', 0)
+		
+		Mobile.verifyElementExist(findTestObject('Registration Objects/android.widget.EditText0 - Password confirmation'), 0)
+		
+		Mobile.setText(findTestObject('Registration Objects/android.widget.EditText0 - Password confirmation'), 'password2!', 0)
+		
+		Mobile.verifyElementExist(findTestObject('Registration Objects/android.widget.Button0 - CREATE ACCOUNT'), 0)
+		
+		Mobile.tap(findTestObject('Registration Objects/android.widget.Button0 - CREATE ACCOUNT'), 0, FailureHandling.STOP_ON_FAILURE)
+		
+		Mobile.verifyElementExist(findTestObject('Registration Objects/android.widget.TextView0 - Password Confirmation doesnt match password'),
+			0)
 	}
 }

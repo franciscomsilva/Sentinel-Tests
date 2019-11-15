@@ -3,7 +3,7 @@ Feature: Registration NOT OK Invalid Email
   I want to start the AUT (Sentinel.apk)
   So that I can check if the app validates the email field on the registration screen
 
-  Scenario: Create an Account
+  Scenario: Verify if the app validates the email field
     Given I opened the App
     When I am at the Registration Screen
     And I provide an invalid email format
