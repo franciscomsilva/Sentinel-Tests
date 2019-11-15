@@ -1,4 +1,4 @@
-Feature: Registration NOT OK Different password and password confirmation
+Feature: Registration NOT OK Email Already in Use
   As a user
   I want to start the AUT (Sentinel.apk)
   So that I can check if the app validates emails that are already in use
