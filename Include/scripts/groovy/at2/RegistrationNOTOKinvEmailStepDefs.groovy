@@ -46,50 +46,26 @@ import cucumber.api.java.en.Given
 import cucumber.api.java.en.Then
 import cucumber.api.java.en.When
 
-import com.kms.katalon.core.mobile.keyword.internal.MobileDriverFactory
-import io.appium.java_client.AppiumDriver
-import com.kms.katalon.core.util.KeywordUtil
 
-
-class RegistrationOKStepDefs {
+class RegistrationNOTOKinvEmailStepDefs {
 	/**
 	 * The step definitions below match with Katalon sample Gherkin steps
 	 */
-	@When("I am at the Registration Screen")
-	def i_am_at_the_Registration_Screen() {
-		
-	}
+	@When("I provide an invalid email format")
+	def i_provide_an_invalid_email_format() {
+	    Mobile.verifyElementExist(findTestObject('Registration Objects/android.widget.EditText0 - E-mail'), 0)
 
-	@When("I provide the correct fields")
-	def i_provide_the_correct_fields() {
-		Mobile.verifyElementExist(findTestObject('Registration Objects/android.widget.EditText0 - E-mail'), 0)
-		
-		Mobile.setText(findTestObject('Registration Objects/android.widget.EditText0 - E-mail'), 'email35@gmail.com', 0)
-		
-		Mobile.verifyElementExist(findTestObject('Registration Objects/android.widget.EditText0 - Password'), 0)
-		
-		Mobile.setText(findTestObject('Registration Objects/android.widget.EditText0 - Password'), 'password1!', 0)
-		
-		Mobile.verifyElementExist(findTestObject('Registration Objects/android.widget.EditText0 - Password confirmation'), 0)
-		
-		Mobile.setText(findTestObject('Registration Objects/android.widget.EditText0 - Password confirmation'), 'password1!', 0)
-
-	}
-
-	@Then("I successfully register and account")
-	def i_successfully_register_and_account() {
-		
+		Mobile.setText(findTestObject('Registration Objects/android.widget.EditText0 - E-mail'), 'invalidEmailFormat', 0)
 		
 		Mobile.verifyElementExist(findTestObject('Registration Objects/android.widget.Button0 - CREATE ACCOUNT'), 0)
 		
 		Mobile.tap(findTestObject('Registration Objects/android.widget.Button0 - CREATE ACCOUNT'), 0)
 		
-		AppiumDriver<?> driver = MobileDriverFactory.getDriver()
-		def toast = driver.findElementByXPath("//android.widget.Toast[@text='User created: email35@gmail.com']")
-		println("Toast element: " + toast)
-		if (toast == null) {
-			KeywordUtil.markFailed('ERROR: Toast object not found!')
-		}
+	}
+	
+	@Then("I dont create an account successfuly")
+	def i_dont_create_an_account_successfuly() {
+	    Mobile.verifyElementExist(findTestObject('Registration Objects/android.widget.TextView0 - Email format must be exampleemail.com'), 0)
 		
 		Mobile.closeApplication()
 	}

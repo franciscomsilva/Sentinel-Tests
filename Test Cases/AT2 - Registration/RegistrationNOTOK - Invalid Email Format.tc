@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>RegistrationNOTOK - Invalid Email Format</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>4c84cd1b-b11a-455f-80ca-514ae0eac9d1</testCaseGuid>
+</TestCaseEntity>

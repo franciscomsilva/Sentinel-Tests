@@ -14,38 +14,20 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
-import com.kms.katalon.core.mobile.keyword.internal.MobileDriverFactory as MobileDriverFactory
-import io.appium.java_client.AppiumDriver as AppiumDriver
-import com.kms.katalon.core.util.KeywordUtil as KeywordUtil
 
 Mobile.startApplication('E:\\Aulas\\3 Ano 1 Semestre\\TAES\\Projeto\\project\\app\\build\\outputs\\apk\\debug\\app-debug.apk', 
     false)
 
 Mobile.verifyElementExist(findTestObject('Registration Objects/android.widget.EditText0 - E-mail'), 0)
 
-Mobile.setText(findTestObject('Registration Objects/android.widget.EditText0 - E-mail'), 'email35@gmail.com', 0)
-
-Mobile.verifyElementExist(findTestObject('Registration Objects/android.widget.EditText0 - Password'), 0)
-
-Mobile.setText(findTestObject('Registration Objects/android.widget.EditText0 - Password'), 'password1!', 0)
-
-Mobile.verifyElementExist(findTestObject('Registration Objects/android.widget.EditText0 - Password confirmation'), 0)
-
-Mobile.setText(findTestObject('Registration Objects/android.widget.EditText0 - Password confirmation'), 'password1!', 0)
+Mobile.setText(findTestObject('Registration Objects/android.widget.EditText0 - E-mail'), 'invalidEmailFormat', 0)
 
 Mobile.verifyElementExist(findTestObject('Registration Objects/android.widget.Button0 - CREATE ACCOUNT'), 0)
 
 Mobile.tap(findTestObject('Registration Objects/android.widget.Button0 - CREATE ACCOUNT'), 0)
 
-AppiumDriver<?> driver = MobileDriverFactory.getDriver()
-
-def toast = driver.findElementByXPath('//android.widget.Toast[@text=\'User created: email35@gmail.com\']')
-
-println('Toast element: ' + toast)
-
-if (toast == null) {
-    KeywordUtil.markFailed('ERROR: Toast object not found!')
-}
+Mobile.verifyElementExist(findTestObject('Registration Objects/android.widget.TextView0 - Email format must be exampleemail.com'), 
+    0)
 
 Mobile.closeApplication()
 
