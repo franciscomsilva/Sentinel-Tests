@@ -32,15 +32,13 @@ Mobile.tap(findTestObject('Dashboard Objects/android.widget.CheckedTextView0 - D
 
 Mobile.verifyElementExist(findTestObject('Dashboard Objects/android.widget.TextView0 - DASHBOARD'), 0)
 
+Mobile.verifyElementExist(findTestObject('Dashboard Objects/android.widget.TextView0 - DASHBOARD'), 0)
+
 Mobile.verifyElementText(findTestObject('Dashboard Objects/android.widget.TextView0 - DASHBOARD'), 'DASHBOARD')
 
 Mobile.verifyElementExist(findTestObject('Dashboard Objects/android.widget.TextView0 - EDIFCIO A'), 0)
 
 Mobile.verifyElementText(findTestObject('Dashboard Objects/android.widget.TextView0 - EDIFCIO A'), 'EDIFÍCIO A')
-
-Mobile.verifyElementExist(findTestObject('Dashboard Objects/android.widget.TextView0 - Edificio A'), 0)
-
-Mobile.verifyElementText(findTestObject('Dashboard Objects/android.widget.TextView0 - Edificio A'), 'Edificio A')
 
 Mobile.closeApplication()
 

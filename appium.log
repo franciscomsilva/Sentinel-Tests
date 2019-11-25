@@ -1,20 +1,20 @@
 [35m[Appium][39m Welcome to Appium v1.15.1
 [35m[Appium][39m Non-default server args:
-[35m[Appium][39m   port: 59162
+[35m[Appium][39m   port: 64075
 [35m[Appium][39m   loglevel: info
-[35m[Appium][39m   chromeDriverPort: 59163
-[35m[Appium][39m   tmpDir: C:\Users\henri\AppData\Local\Temp\\Katalon\Appium\Temp1574114312856
-[35m[Appium][39m Appium REST http interface listener started on 0.0.0.0:59162
+[35m[Appium][39m   chromeDriverPort: 64076
+[35m[Appium][39m   tmpDir: C:\Users\henri\AppData\Local\Temp\\Katalon\Appium\Temp1574724397191
+[35m[Appium][39m Appium REST http interface listener started on 0.0.0.0:64075
 [35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/status[39m
 [35m[HTTP][39m [90m{}[39m
-[35m[HTTP][39m [37m<-- GET /wd/hub/status [39m[32m200[39m [90m9 ms - 68[39m
+[35m[HTTP][39m [37m<-- GET /wd/hub/status [39m[32m200[39m [90m7 ms - 68[39m
 [35m[HTTP][39m [90m[39m
 [35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/status[39m
 [35m[HTTP][39m [90m{}[39m
-[35m[HTTP][39m [37m<-- GET /wd/hub/status [39m[32m200[39m [90m1 ms - 68[39m
+[35m[HTTP][39m [37m<-- GET /wd/hub/status [39m[32m200[39m [90m3 ms - 68[39m
 [35m[HTTP][39m [90m[39m
 [35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session[39m
-[35m[HTTP][39m [90m{"desiredCapabilities":{"app":"E:\\Aulas\\3 Ano 1 Semestre\\TAES\\Projeto\\project\\app\\build\\outputs\\apk\\debug\\app-debug.apk","noReset":true,"newCommandTimeout":1800,"platformVersion":"P","autoGrantPermissions":true,"platformName":"Android","udid":"emulator-5554","deviceName":"emulator-5554 (Android SDK built for x86 - Android P)","fullReset":false,"platform":"ANDROID","systemPort":59169},"capabilities":{"firstMatch":[{"appium:app":"E:\\Aulas\\3 Ano 1 Semestre\\TAES\\Projeto\\project\\app\\build\\outputs\\apk\\debug\\app-debug.apk","appium:autoGrantPermissions":true,"appium:deviceName":"emulator-5554 (Android SDK built for x86 - Android P)","appium:fullReset":false,"appium:newCommandTimeout":1800,"appium:noReset":true,"platform":"ANDROID","platformName":"android","appium:platformVersion":"P","appium:systemPort":59169,"appium:udid":"emulator-5554"}]}}[39m
+[35m[HTTP][39m [90m{"desiredCapabilities":{"app":"E:\\Aulas\\3 Ano 1 Semestre\\TAES\\Projeto\\project\\app\\build\\outputs\\apk\\debug\\app-debug.apk","noReset":true,"newCommandTimeout":1800,"platformVersion":"P","autoGrantPermissions":true,"platformName":"Android","udid":"emulator-5554","deviceName":"emulator-5554 (Android SDK built for x86 - Android P)","fullReset":false,"platform":"ANDROID","systemPort":64083},"capabilities":{"firstMatch":[{"appium:app":"E:\\Aulas\\3 Ano 1 Semestre\\TAES\\Projeto\\project\\app\\build\\outputs\\apk\\debug\\app-debug.apk","appium:autoGrantPermissions":true,"appium:deviceName":"emulator-5554 (Android SDK built for x86 - Android P)","appium:fullReset":false,"appium:newCommandTimeout":1800,"appium:noReset":true,"platform":"ANDROID","platformName":"android","appium:platformVersion":"P","appium:systemPort":64083,"appium:udid":"emulator-5554"}]}}[39m
 [35m[BaseDriver][39m The capabilities ["platform"] are not standard capabilities and should have an extension prefix
 [35m[Appium][39m 
 [35m[Appium][39m ======================================================================
@@ -45,7 +45,7 @@
 [35m[Appium][39m Appium v1.15.1 creating new AndroidUiautomator2Driver (v1.37.2) session
 [35m[BaseDriver][39m The following capabilities were provided, but are not recognized by Appium:
 [35m[BaseDriver][39m   platform
-[35m[BaseDriver][39m Session created with session id: 55b49b66-e296-4fba-b596-1953c64efe34
+[35m[BaseDriver][39m Session created with session id: df397baa-9b73-4952-9fe8-6aa368e59e5b
 [35m[BaseDriver][39m Using local app 'E:\Aulas\3 Ano 1 Semestre\TAES\Projeto\project\app\build\outputs\apk\debug\app-debug.apk'
 [35m[ADB][39m Found 1 'build-tools' folders under 'C:\Users\henri\.katalon\tools\android_sdk' (newest first):
 [35m[ADB][39m     C:/Users/henri/.katalon/tools/android_sdk/build-tools/29.0.2
@@ -62,11 +62,6 @@
 [35m[ADB][39m Cannot extract apk info using apkanalyzer. Falling back to aapt. Original error: Could not find 'apkanalyzer.bat' in ["C:\\Users\\henri\\.katalon\\tools\\android_sdk\\platform-tools\\apkanalyzer.bat","C:\\Users\\henri\\.katalon\\tools\\android_sdk\\emulator\\apkanalyzer.bat","C:\\Users\\henri\\.katalon\\tools\\android_sdk\\tools\\apkanalyzer.bat","C:\\Users\\henri\\.katalon\\tools\\android_sdk\\tools\\bin\\apkanalyzer.bat","C:\\Users\\henri\\.katalon\\tools\\android_sdk\\build-tools\\29.0.2\\apkanalyzer.bat"]. Do you have Android Build Tools installed at 'C:\Users\henri\.katalon\tools\android_sdk'?
 [35m[ADB][39m Using 'apksigner.bat' from 'C:\Users\henri\.katalon\tools\android_sdk\build-tools\29.0.2\apksigner.bat'
 [35m[UiAutomator2][39m Server packages are not going to be (re)installed
-[35m[ADB][39m Got an error during apksigner execution: Command 'apksigner.bat verify --print-certs 'E:\\Aulas\\3 Ano 1 Semestre\\TAES\\Projeto\\project\\app\\build\\outputs\\apk\\debug\\app-debug.apk'' exited with code 1
-[35m[ADB][39m apksigner stderr: DOES NOT VERIFY
-[35m[ADB][39m ERROR: No JAR signatures
-[35m[ADB][39m 
-[35m[ADB][39m Using 'zipalign.exe' from 'C:\Users\henri\.katalon\tools\android_sdk\build-tools\29.0.2\zipalign.exe'
 [35m[ADB][39m Cannot extract apk info using apkanalyzer. Falling back to aapt. Original error: Could not find 'apkanalyzer.bat' in ["C:\\Users\\henri\\.katalon\\tools\\android_sdk\\platform-tools\\apkanalyzer.bat","C:\\Users\\henri\\.katalon\\tools\\android_sdk\\emulator\\apkanalyzer.bat","C:\\Users\\henri\\.katalon\\tools\\android_sdk\\tools\\apkanalyzer.bat","C:\\Users\\henri\\.katalon\\tools\\android_sdk\\tools\\bin\\apkanalyzer.bat","C:\\Users\\henri\\.katalon\\tools\\android_sdk\\build-tools\\29.0.2\\apkanalyzer.bat"]. Do you have Android Build Tools installed at 'C:\Users\henri\.katalon\tools\android_sdk'?
 [35m[UiAutomator2][39m Starting UIAutomator2 server 4.3.0
 [35m[UiAutomator2][39m Using UIAutomator2 server from 'C:\Users\henri\AppData\Roaming\npm\node_modules\appium\node_modules\appium-uiautomator2-server\apks\appium-uiautomator2-server-v4.3.0.apk' and test from 'C:\Users\henri\AppData\Roaming\npm\node_modules\appium\node_modules\appium-uiautomator2-server\apks\appium-uiautomator2-server-debug-androidTest.apk'
@@ -76,25 +71,47 @@
 [35m[WD Proxy][39m Determined the downstream protocol as 'W3C'
 [35m[AndroidDriver][39m Screen already unlocked, doing nothing
 [35m[UiAutomator2][39m Starting 'pt.ipleiria.estg.dei.sentinel/pt.ipleiria.estg.dei.sentinel.MainActivity and waiting for 'pt.ipleiria.estg.dei.sentinel/pt.ipleiria.estg.dei.sentinel.MainActivity'
-[35m[Appium][39m New AndroidUiautomator2Driver session created successfully, session 55b49b66-e296-4fba-b596-1953c64efe34 added to master session list
-[35m[HTTP][39m [37m<-- POST /wd/hub/session [39m[32m200[39m [90m23927 ms - 1294[39m
+[35m[Appium][39m New AndroidUiautomator2Driver session created successfully, session df397baa-9b73-4952-9fe8-6aa368e59e5b added to master session list
+[35m[HTTP][39m [37m<-- POST /wd/hub/session [39m[32m200[39m [90m14325 ms - 1294[39m
 [35m[HTTP][39m [90m[39m
-[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/55b49b66-e296-4fba-b596-1953c64efe34[39m
+[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/df397baa-9b73-4952-9fe8-6aa368e59e5b[39m
 [35m[HTTP][39m [90m{}[39m
-[35m[HTTP][39m [37m<-- GET /wd/hub/session/55b49b66-e296-4fba-b596-1953c64efe34 [39m[32m200[39m [90m74 ms - 1226[39m
+[35m[HTTP][39m [37m<-- GET /wd/hub/session/df397baa-9b73-4952-9fe8-6aa368e59e5b [39m[32m200[39m [90m92 ms - 1226[39m
 [35m[HTTP][39m [90m[39m
-[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/55b49b66-e296-4fba-b596-1953c64efe34[39m
+[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/df397baa-9b73-4952-9fe8-6aa368e59e5b[39m
 [35m[HTTP][39m [90m{}[39m
-[35m[HTTP][39m [37m<-- GET /wd/hub/session/55b49b66-e296-4fba-b596-1953c64efe34 [39m[32m200[39m [90m27 ms - 1226[39m
+[35m[HTTP][39m [37m<-- GET /wd/hub/session/df397baa-9b73-4952-9fe8-6aa368e59e5b [39m[32m200[39m [90m39 ms - 1226[39m
 [35m[HTTP][39m [90m[39m
 [35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/status[39m
 [35m[HTTP][39m [90m{}[39m
 [35m[HTTP][39m [37m<-- GET /wd/hub/status [39m[32m200[39m [90m2 ms - 68[39m
 [35m[HTTP][39m [90m[39m
-[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/55b49b66-e296-4fba-b596-1953c64efe34/timeouts[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/df397baa-9b73-4952-9fe8-6aa368e59e5b/timeouts[39m
 [35m[HTTP][39m [90m{"implicit":60000}[39m
-[35m[HTTP][39m [37m<-- POST /wd/hub/session/55b49b66-e296-4fba-b596-1953c64efe34/timeouts [39m[32m200[39m [90m7 ms - 14[39m
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/df397baa-9b73-4952-9fe8-6aa368e59e5b/timeouts [39m[32m200[39m [90m7 ms - 14[39m
 [35m[HTTP][39m [90m[39m
-[35m[BaseDriver][39m Shutting down because we waited 1800 seconds for a command
-[35m[Appium][39m Closing session, cause was 'New Command Timeout of 1800 seconds expired. Try customizing the timeout using the 'newCommandTimeout' desired capability'
-[35m[Appium][39m Removing session 55b49b66-e296-4fba-b596-1953c64efe34 from our master session list
+[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/df397baa-9b73-4952-9fe8-6aa368e59e5b/source[39m
+[35m[HTTP][39m [90m{}[39m
+[35m[W3C (df397baa)][39m Driver proxy active, passing request on via HTTP proxy
+[35m[WD Proxy][39m Replacing sessionId d244b94f-eab0-4e1c-906b-b06580e24a11 with df397baa-9b73-4952-9fe8-6aa368e59e5b
+[35m[HTTP][39m [37m<-- GET /wd/hub/session/df397baa-9b73-4952-9fe8-6aa368e59e5b/source [39m[32m200[39m [90m658 ms - 12219[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/df397baa-9b73-4952-9fe8-6aa368e59e5b/screenshot[39m
+[35m[HTTP][39m [90m{}[39m
+[35m[HTTP][39m [37m<-- GET /wd/hub/session/df397baa-9b73-4952-9fe8-6aa368e59e5b/screenshot [39m[32m200[39m [90m642 ms - 235470[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/df397baa-9b73-4952-9fe8-6aa368e59e5b/source[39m
+[35m[HTTP][39m [90m{}[39m
+[35m[W3C (df397baa)][39m Driver proxy active, passing request on via HTTP proxy
+[35m[WD Proxy][39m Replacing sessionId d244b94f-eab0-4e1c-906b-b06580e24a11 with df397baa-9b73-4952-9fe8-6aa368e59e5b
+[35m[HTTP][39m [37m<-- GET /wd/hub/session/df397baa-9b73-4952-9fe8-6aa368e59e5b/source [39m[32m200[39m [90m475 ms - 17683[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/df397baa-9b73-4952-9fe8-6aa368e59e5b/screenshot[39m
+[35m[HTTP][39m [90m{}[39m
+[35m[HTTP][39m [37m<-- GET /wd/hub/session/df397baa-9b73-4952-9fe8-6aa368e59e5b/screenshot [39m[32m200[39m [90m525 ms - 117608[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mDELETE[39m [37m/wd/hub/session/df397baa-9b73-4952-9fe8-6aa368e59e5b[39m
+[35m[HTTP][39m [90m{}[39m
+[35m[Appium][39m Removing session df397baa-9b73-4952-9fe8-6aa368e59e5b from our master session list
+[35m[HTTP][39m [37m<-- DELETE /wd/hub/session/df397baa-9b73-4952-9fe8-6aa368e59e5b [39m[32m200[39m [90m478 ms - 14[39m
+[35m[HTTP][39m [90m[39m
