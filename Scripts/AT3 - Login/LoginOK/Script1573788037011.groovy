@@ -15,3 +15,32 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 
+Mobile.startApplication('E:\\Aulas\\3 Ano 1 Semestre\\TAES\\Projeto\\project\\app\\build\\outputs\\apk\\debug\\app-debug.apk', 
+    false)
+
+Mobile.verifyElementExist(findTestObject('Login Objects/android.widget.ImageButton0 Dashboard'), 0)
+
+Mobile.tap(findTestObject('Login Objects/android.widget.ImageButton0 Dashboard'), 0)
+
+Mobile.tap(findTestObject('Login Objects/android.widget.CheckedTextView0 - Login'), 0)
+
+Mobile.verifyElementExist(findTestObject('Login Objects/android.widget.EditText0 - E-mail'), 0)
+
+Mobile.setText(findTestObject('Login Objects/android.widget.EditText0 - E-mail'), 'email@gmail.com', 0)
+
+Mobile.verifyElementExist(findTestObject('Login Objects/android.widget.EditText0 - Password'), 0)
+
+Mobile.setText(findTestObject('Login Objects/android.widget.EditText0 - Password'), '123456', 0)
+
+Mobile.verifyElementExist(findTestObject('Login Objects/android.widget.ImageButton0 - Button Login'), 0)
+
+Mobile.tap(findTestObject('Login Objects/android.widget.ImageButton0 - Button Login'), 0)
+
+Mobile.tap(findTestObject('Login Objects/android.widget.ImageButton0 Dashboard'), 0)
+
+Mobile.verifyElementExist(findTestObject('Login Objects/android.widget.TextView0 - emailgmail.com'), 0)
+
+Mobile.verifyElementExist(findTestObject('Login Objects/android.widget.CheckedTextView0 - Logout'), 0)
+
+Mobile.closeApplication()
+

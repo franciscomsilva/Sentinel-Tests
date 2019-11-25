@@ -54,22 +54,22 @@ class RegistrationNotOkDiffPassStepDefs {
 	@When("I provide an different password and password confirmation")
 	def i_provide_an_different_password_and_password_confirmation() {
 		Mobile.verifyElementExist(findTestObject('Registration Objects/android.widget.EditText0 - E-mail'), 0)
-		
+
 		Mobile.setText(findTestObject('Registration Objects/android.widget.EditText0 - E-mail'), 'email300@gmail.com', 0)
-		
+
 		Mobile.verifyElementExist(findTestObject('Registration Objects/android.widget.EditText0 - Password'), 0)
-		
+
 		Mobile.setText(findTestObject('Registration Objects/android.widget.EditText0 - Password'), 'password1!', 0)
-		
+
 		Mobile.verifyElementExist(findTestObject('Registration Objects/android.widget.EditText0 - Password confirmation'), 0)
-		
+
 		Mobile.setText(findTestObject('Registration Objects/android.widget.EditText0 - Password confirmation'), 'password2!', 0)
-		
+
 		Mobile.verifyElementExist(findTestObject('Registration Objects/android.widget.Button0 - CREATE ACCOUNT'), 0)
-		
+
 		Mobile.tap(findTestObject('Registration Objects/android.widget.Button0 - CREATE ACCOUNT'), 0, FailureHandling.STOP_ON_FAILURE)
-		
+
 		Mobile.verifyElementExist(findTestObject('Registration Objects/android.widget.TextView0 - Password Confirmation doesnt match password'),
-			0)
+				0)
 	}
 }
