@@ -47,30 +47,22 @@ import cucumber.api.java.en.Then
 import cucumber.api.java.en.When
 
 
-class RegistrationNotOkEmptyFieldsStepDefs {
-	@When("I press Create Account button with empty fields")
-	def i_press_Create_Account_button_with_empty_fields() {
+class RegistrationNotOkInvEmailFormatStepDefs {
+	@When("I insert invalid email format")
+	def i_insert_invalid_email_format() {
 		Mobile.verifyElementExist(findTestObject('AT2 Objects/android.widget.EditText0 - E-mail'), 0)
+
+		Mobile.setText(findTestObject('AT2 Objects/android.widget.EditText0 - E-mail'), 'invalidEmailFormat', 0)
+		
+		Mobile.verifyElementExist(findTestObject('AT2 Objects/android.widget.Button0 - CREATE ACCOUNT'), 0)
 		
 		Mobile.tap(findTestObject('AT2 Objects/android.widget.Button0 - CREATE ACCOUNT'), 0)
 		
-		Mobile.verifyElementExist(findTestObject('AT2 Objects/android.widget.TextView0 - Email field is mandatory'), 0)
-		
-		Mobile.setText(findTestObject('AT2 Objects/android.widget.EditText0 - E-mail'), 'email@gmail.com', 0)
-		
-		Mobile.verifyElementExist(findTestObject('AT2 Objects/android.widget.EditText0 - Password'), 0)
-		
-		Mobile.tap(findTestObject('AT2 Objects/android.widget.Button0 - CREATE ACCOUNT'), 0)
-		
-		Mobile.verifyElementExist(findTestObject('AT2 Objects/android.widget.TextView0 - Password field is mandatory'), 0)
-		
-		Mobile.setText(findTestObject('AT2 Objects/android.widget.EditText0 - Password'), 'password!1', 0)
-		
-		Mobile.verifyElementExist(findTestObject('AT2 Objects/android.widget.EditText0 - Password confirmation'), 0)
-		
-		Mobile.tap(findTestObject('AT2 Objects/android.widget.Button0 - CREATE ACCOUNT'), 0)
-		
-		Mobile.verifyElementExist(findTestObject('AT2 Objects/android.widget.TextView0 - Password confirmation field is mandatory'),
-			0)
+		Mobile.verifyElementExist(findTestObject('AT2 Objects/android.widget.TextView0 - Email format must be exampleemail.com'), 0)
+	}
+
+	@Then("I dont create an account")
+	def i_dont_create_an_account() {
+		Mobile.closeApplication()
 	}
 }

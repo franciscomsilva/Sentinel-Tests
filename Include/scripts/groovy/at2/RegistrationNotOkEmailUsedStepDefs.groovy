@@ -47,30 +47,26 @@ import cucumber.api.java.en.Then
 import cucumber.api.java.en.When
 
 
-class RegistrationNotOkEmptyFieldsStepDefs {
-	@When("I press Create Account button with empty fields")
-	def i_press_Create_Account_button_with_empty_fields() {
+class RegistrationNotOkEmailUsedStepDefs {
+	@When("I insert email in use")
+	def i_insert_email_in_use() {
 		Mobile.verifyElementExist(findTestObject('AT2 Objects/android.widget.EditText0 - E-mail'), 0)
-		
-		Mobile.tap(findTestObject('AT2 Objects/android.widget.Button0 - CREATE ACCOUNT'), 0)
-		
-		Mobile.verifyElementExist(findTestObject('AT2 Objects/android.widget.TextView0 - Email field is mandatory'), 0)
 		
 		Mobile.setText(findTestObject('AT2 Objects/android.widget.EditText0 - E-mail'), 'email@gmail.com', 0)
 		
 		Mobile.verifyElementExist(findTestObject('AT2 Objects/android.widget.EditText0 - Password'), 0)
 		
-		Mobile.tap(findTestObject('AT2 Objects/android.widget.Button0 - CREATE ACCOUNT'), 0)
-		
-		Mobile.verifyElementExist(findTestObject('AT2 Objects/android.widget.TextView0 - Password field is mandatory'), 0)
-		
 		Mobile.setText(findTestObject('AT2 Objects/android.widget.EditText0 - Password'), 'password!1', 0)
 		
 		Mobile.verifyElementExist(findTestObject('AT2 Objects/android.widget.EditText0 - Password confirmation'), 0)
 		
+		Mobile.setText(findTestObject('AT2 Objects/android.widget.EditText0 - Password confirmation'), 'password!1', 0)
+		
+		Mobile.verifyElementExist(findTestObject('AT2 Objects/android.widget.Button0 - CREATE ACCOUNT'), 0)
+		
 		Mobile.tap(findTestObject('AT2 Objects/android.widget.Button0 - CREATE ACCOUNT'), 0)
 		
-		Mobile.verifyElementExist(findTestObject('AT2 Objects/android.widget.TextView0 - Password confirmation field is mandatory'),
+		Mobile.verifyElementExist(findTestObject('AT2 Objects/android.widget.TextView0 - The email addressed is already asssociated with an account'),
 			0)
 	}
 }
