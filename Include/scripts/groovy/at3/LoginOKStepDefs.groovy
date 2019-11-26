@@ -48,21 +48,35 @@ import cucumber.api.java.en.When
 
 
 class LoginOKStepDefs {
-	/**
-	 * The step definitions below match with Katalon sample Gherkin steps
-	 */
-	@Given("I want to write a step with (.*)")
-	def I_want_to_write_a_step_with_name(String name) {
-		println name
+	@Given("I am at the login page")
+	def i_am_at_the_login_page() {
+		Mobile.startApplication('E:\\Aulas\\3 Ano 1 Semestre\\TAES\\Projeto\\project\\app\\build\\outputs\\apk\\debug\\app-debug.apk',
+			false)
+		
+		Mobile.tap(findTestObject('AT3 Objects/android.widget.ImageButton0 Lateral Menu Button'), 0)
+		
+		Mobile.tap(findTestObject('AT3 Objects/android.widget.CheckedTextView0 - Login'), 0)
+		
+		
 	}
-
-	@When("I check for the (\\d+) in step")
-	def I_check_for_the_value_in_step(int value) {
-		println value
+	
+	@When("I provide the correct login fields")
+	def i_provide_the_correct_login_fields() {
+		Mobile.setText(findTestObject('AT3 Objects/android.widget.EditText0 - E-mail'), 'email@gmail.com', 0)
+		
+		Mobile.setText(findTestObject('AT3 Objects/android.widget.EditText0 - Password'), '123456', 0)
+		
+		
 	}
-
-	@Then("I verify the (.*) in step")
-	def I_verify_the_status_in_step(String status) {
-		println status
+	
+	@Then("I login to my account")
+	def i_login_to_my_account() {
+		Mobile.tap(findTestObject('AT3 Objects/android.widget.ImageButton0 Login Button'), 0)
+		
+		Mobile.tap(findTestObject('AT3 Objects/android.widget.ImageButton0 Lateral Menu Button'), 0)
+		
+		Mobile.verifyElementExist(findTestObject('AT3 Objects/android.widget.TextView0 - emailgmail.com'), 0)
+		
+		Mobile.closeApplication()
 	}
 }

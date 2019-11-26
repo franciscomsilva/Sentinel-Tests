@@ -48,21 +48,23 @@ import cucumber.api.java.en.When
 
 
 class LoginNotOkEmptyFieldsStepDefs {
-	/**
-	 * The step definitions below match with Katalon sample Gherkin steps
-	 */
-	@Given("I want to write a step with (.*)")
-	def I_want_to_write_a_step_with_name(String name) {
-		println name
+	@When("I provide empty fields")
+	def i_provide_empty_fields() {
+		
+		Mobile.tap(findTestObject('AT3 Objects/android.widget.ImageButton0 Login Button'), 0)
+		
+		Mobile.verifyElementExist(findTestObject('AT3 Objects/android.widget.TextView0 - Email field is mandatory'), 0)
+		
+		Mobile.setText(findTestObject('AT3 Objects/android.widget.EditText0 - E-mail'), 'email@gmail.com', 0)
+		
+		Mobile.tap(findTestObject('AT3 Objects/android.widget.ImageButton0 Login Button'), 0)
+		
+		Mobile.verifyElementExist(findTestObject('AT3 Objects/android.widget.TextView0 - Password field is mandatory'), 0)
 	}
-
-	@When("I check for the (\\d+) in step")
-	def I_check_for_the_value_in_step(int value) {
-		println value
+	
+	@Then("I dont login to my account")
+	def i_dont_login_to_my_account() {
+		Mobile.closeApplication()
 	}
-
-	@Then("I verify the (.*) in step")
-	def I_verify_the_status_in_step(String status) {
-		println status
-	}
+	
 }

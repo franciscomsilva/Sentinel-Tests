@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>LoginNotOkEmptyFields</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>1f5eb807-b2ca-4e65-a4f8-178b8ea9e0ae</testCaseGuid>
-</TestCaseEntity>
