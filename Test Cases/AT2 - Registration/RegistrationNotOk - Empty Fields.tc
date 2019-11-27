@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>RegistrationNotOk - Empty Fields</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>c5d0464f-71c6-4058-b8b2-5d31b58c4a87</testCaseGuid>
+</TestCaseEntity>
