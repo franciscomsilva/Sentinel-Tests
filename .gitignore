@@ -14,3 +14,15 @@ build
 .classpath
 
 .project
+
+appium.log
+
+Settings
+
+*.class
+*.swp
+
+\.classpath
+
+\.settings/
+
