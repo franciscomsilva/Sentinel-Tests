@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>LoginNotOk - Empty Fields</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>124a2200-77aa-48b5-b0df-9a12192677bb</testCaseGuid>
+</TestCaseEntity>
