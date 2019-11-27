@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>LoginNotOk - Incorrect Fields</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>2af48e18-7cae-4285-8d5e-b6f9b26876d8</testCaseGuid>
+</TestCaseEntity>
