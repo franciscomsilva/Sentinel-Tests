@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>RegistrationNotOk - Invalid Email Format</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>b17d55cb-8aa9-4820-8429-6d68d3e1753d</testCaseGuid>
+</TestCaseEntity>
