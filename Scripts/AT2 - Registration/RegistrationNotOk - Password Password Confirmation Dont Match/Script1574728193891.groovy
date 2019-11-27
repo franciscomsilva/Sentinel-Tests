@@ -15,8 +15,7 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 
-Mobile.startApplication('E:\\Aulas\\3 Ano 1 Semestre\\TAES\\Projeto\\project\\app\\build\\outputs\\apk\\debug\\app-debug.apk', 
-    false)
+Mobile.startApplication(GlobalVariable.appPath, false)
 
 Mobile.verifyElementExist(findTestObject('AT2 Objects/android.widget.ImageButton0'), 0)
 

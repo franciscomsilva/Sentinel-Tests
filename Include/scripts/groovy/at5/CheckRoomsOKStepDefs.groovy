@@ -1,4 +1,4 @@
-package at2
+package at5
 import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
 import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
 import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
@@ -47,22 +47,41 @@ import cucumber.api.java.en.Then
 import cucumber.api.java.en.When
 
 
-class RegistrationNotOkInvEmailFormatStepDefs {
-	@When("I insert invalid email format")
-	def i_insert_invalid_email_format() {
-		Mobile.verifyElementExist(findTestObject('AT2 Objects/android.widget.EditText0 - E-mail'), 0)
-
-		Mobile.setText(findTestObject('AT2 Objects/android.widget.EditText0 - E-mail'), 'invalidEmailFormat', 0)
-
-		Mobile.verifyElementExist(findTestObject('AT2 Objects/android.widget.Button0 - CREATE ACCOUNT'), 0)
-
-		Mobile.tap(findTestObject('AT2 Objects/android.widget.Button0 - CREATE ACCOUNT'), 0)
-
-		Mobile.verifyElementExist(findTestObject('AT2 Objects/android.widget.TextView0 - Email format must be exampleemail.com'), 0)
+class CheckRoomsOKStepDefs {
+	@Given("I am logged in")
+	def i_am_logged_in() {
+		Mobile.startApplication(GlobalVariable.appPath, false)
+		
+		Mobile.tap(findTestObject('AT3 Objects/android.widget.ImageButton0 Lateral Menu Button'), 0)
+		
+		Mobile.tap(findTestObject('AT3 Objects/android.widget.CheckedTextView0 - Login'), 0)
+		
+		Mobile.setText(findTestObject('AT3 Objects/android.widget.EditText0 - E-mail'), 'email@gmail.com', 0)
+		
+		Mobile.setText(findTestObject('AT3 Objects/android.widget.EditText0 - Password'), '123456', 0)
+		
+		Mobile.tap(findTestObject('AT3 Objects/android.widget.ImageButton0 Login Button'), 0)
+		
+		
 	}
-
-	@Then("I dont create an account")
-	def i_dont_create_an_account() {
+	
+	@When("I click on the room selector")
+	def i_click_on_the_room_selector() {
+		Mobile.verifyElementExist(findTestObject('AT5 - Check Rooms/android.widget.Spinner Room Change'), 0)
+		
+		Mobile.tap(findTestObject('AT5 - Check Rooms/android.widget.Spinner Room Change'), 0)
+		
+		Mobile.verifyElementExist(findTestObject('AT5 - Check Rooms/android.widget.CheckedTextView0 - Room A'), 0)
+		
+		Mobile.verifyElementExist(findTestObject('AT5 - Check Rooms/android.widget.CheckedTextView0 - Room B'), 0)
+		
+		Mobile.verifyElementExist(findTestObject('AT5 - Check Rooms/android.widget.CheckedTextView0 - Room C'), 0)
+		
+		
+	}
+	
+	@Then("I can check the QoA in the various rooms")
+	def i_can_check_the_QoA_in_the_various_rooms() {
 		Mobile.closeApplication()
 	}
 }

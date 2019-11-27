@@ -14,29 +14,29 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
+import io.appium.java_client.MobileElement as MobileElement
 
 Mobile.startApplication(GlobalVariable.appPath, false)
 
-Mobile.verifyElementExist(findTestObject('AT2 Objects/android.widget.ImageButton0'), 0)
+Mobile.tap(findTestObject('AT3 Objects/android.widget.ImageButton0 Lateral Menu Button'), 0)
 
-Mobile.tap(findTestObject('AT2 Objects/android.widget.ImageButton0'), 0)
+Mobile.tap(findTestObject('AT3 Objects/android.widget.CheckedTextView0 - Login'), 0)
 
-Mobile.verifyElementExist(findTestObject('AT2 Objects/android.widget.CheckedTextView0 - Create Account'), 0)
+Mobile.setText(findTestObject('AT3 Objects/android.widget.EditText0 - E-mail'), 'email@gmail.com', 0)
 
-Mobile.tap(findTestObject('AT2 Objects/android.widget.CheckedTextView0 - Create Account'), 0)
+Mobile.setText(findTestObject('AT3 Objects/android.widget.EditText0 - Password'), '123456', 0)
 
-Mobile.verifyElementExist(findTestObject('AT2 Objects/android.widget.TextView0 - REGISTER'), 0)
+Mobile.tap(findTestObject('AT3 Objects/android.widget.ImageButton0 Login Button'), 0)
 
-Mobile.verifyElementExist(findTestObject('AT2 Objects/android.widget.EditText0 - E-mail'), 0)
+Mobile.verifyElementExist(findTestObject('AT5 - Check Rooms/android.widget.Spinner Room Change'), 0)
 
-Mobile.setText(findTestObject('AT2 Objects/android.widget.EditText0 - E-mail'), 'invalidEmailFormat', 0)
+Mobile.tap(findTestObject('AT5 - Check Rooms/android.widget.Spinner Room Change'), 0)
 
-Mobile.verifyElementExist(findTestObject('AT2 Objects/android.widget.Button0 - CREATE ACCOUNT'), 0)
+Mobile.verifyElementExist(findTestObject('AT5 - Check Rooms/android.widget.CheckedTextView0 - Room A'), 0)
 
-Mobile.tap(findTestObject('AT2 Objects/android.widget.Button0 - CREATE ACCOUNT'), 0)
+Mobile.verifyElementExist(findTestObject('AT5 - Check Rooms/android.widget.CheckedTextView0 - Room B'), 0)
 
-Mobile.verifyElementExist(findTestObject('AT2 Objects/android.widget.TextView0 - Email format must be exampleemail.com'), 
-    0)
+Mobile.verifyElementExist(findTestObject('AT5 - Check Rooms/android.widget.CheckedTextView0 - Room C'), 0)
 
 Mobile.closeApplication()
 

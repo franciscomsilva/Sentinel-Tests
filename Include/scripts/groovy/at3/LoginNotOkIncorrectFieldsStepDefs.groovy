@@ -51,13 +51,11 @@ class LoginNotOkIncorrectFieldsStepDefs {
 	@When("I provide incorrect login fields")
 	def i_provide_incorrect_login_fields() {
 		Mobile.setText(findTestObject('AT3 Objects/android.widget.EditText0 - E-mail'), 'email@gmail.com', 0)
-		
+
 		Mobile.setText(findTestObject('AT3 Objects/android.widget.EditText0 - Password'), 'incorrectPassword', 0)
-		
+
 		Mobile.tap(findTestObject('AT3 Objects/android.widget.ImageButton0 Login Button'), 0)
-		
+
 		Mobile.verifyElementExist(findTestObject('AT3 Objects/android.widget.TextView0 - Invalid emailpassword combination'), 0)
 	}
-	
-	
 }
