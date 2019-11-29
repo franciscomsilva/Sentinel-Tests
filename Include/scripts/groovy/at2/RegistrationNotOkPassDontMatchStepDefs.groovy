@@ -51,21 +51,21 @@ class RegistrationNotOkPassDontMatchStepDefs {
 	@When("I insert different passwords")
 	def i_insert_different_passwords() {
 		Mobile.verifyElementExist(findTestObject('AT2 Objects/android.widget.EditText0 - E-mail'), 0)
-		
+
 		Mobile.setText(findTestObject('AT2 Objects/android.widget.EditText0 - E-mail'), 'email9999@gmail.com', 0)
-		
+
 		Mobile.verifyElementExist(findTestObject('AT2 Objects/android.widget.EditText0 - Password'), 0)
-		
+
 		Mobile.setText(findTestObject('AT2 Objects/android.widget.EditText0 - Password'), 'password!1', 0)
-		
+
 		Mobile.verifyElementExist(findTestObject('AT2 Objects/android.widget.EditText0 - Password confirmation'), 0)
-		
+
 		Mobile.setText(findTestObject('AT2 Objects/android.widget.EditText0 - Password confirmation'), 'password!1diff', 0)
-		
+
 		Mobile.verifyElementExist(findTestObject('AT2 Objects/android.widget.Button0 - CREATE ACCOUNT'), 0)
-		
+
 		Mobile.tap(findTestObject('AT2 Objects/android.widget.Button0 - CREATE ACCOUNT'), 0)
-		
+
 		Mobile.verifyElementExist(findTestObject('AT2 Objects/android.widget.TextView0 - Password Confirmation doesnt match password'), 0)
 	}
 }

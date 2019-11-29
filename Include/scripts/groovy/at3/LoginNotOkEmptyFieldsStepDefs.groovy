@@ -50,21 +50,20 @@ import cucumber.api.java.en.When
 class LoginNotOkEmptyFieldsStepDefs {
 	@When("I provide empty fields")
 	def i_provide_empty_fields() {
-		
+
 		Mobile.tap(findTestObject('AT3 Objects/android.widget.ImageButton0 Login Button'), 0)
-		
+
 		Mobile.verifyElementExist(findTestObject('AT3 Objects/android.widget.TextView0 - Email field is mandatory'), 0)
-		
+
 		Mobile.setText(findTestObject('AT3 Objects/android.widget.EditText0 - E-mail'), 'email@gmail.com', 0)
-		
+
 		Mobile.tap(findTestObject('AT3 Objects/android.widget.ImageButton0 Login Button'), 0)
-		
+
 		Mobile.verifyElementExist(findTestObject('AT3 Objects/android.widget.TextView0 - Password field is mandatory'), 0)
 	}
-	
+
 	@Then("I dont login to my account")
 	def i_dont_login_to_my_account() {
 		Mobile.closeApplication()
 	}
-	
 }

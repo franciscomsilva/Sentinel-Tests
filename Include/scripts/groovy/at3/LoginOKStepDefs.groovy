@@ -50,8 +50,7 @@ import cucumber.api.java.en.When
 class LoginOKStepDefs {
 	@Given("I am at the login page")
 	def i_am_at_the_login_page() {
-		Mobile.startApplication('E:\\Aulas\\3 Ano 1 Semestre\\TAES\\Projeto\\project\\app\\build\\outputs\\apk\\debug\\app-debug.apk',
-				false)
+		Mobile.startApplication(GlobalVariable.appPath, false)
 
 		Mobile.tap(findTestObject('AT3 Objects/android.widget.ImageButton0 Lateral Menu Button'), 0)
 

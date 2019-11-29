@@ -50,36 +50,35 @@ import cucumber.api.java.en.When
 class DashboardOKStepDefs {
 	@Given("I open the Sentinel App")
 	def i_open_the_Sentinel_App() {
-		Mobile.startApplication('E:\\Aulas\\3 Ano 1 Semestre\\TAES\\Projeto\\project\\app\\build\\outputs\\apk\\debug\\app-debug.apk',
-				false)
+		Mobile.startApplication(GlobalVariable.appPath, false)
 	}
 
 	@Then("I verify the QoA in the Building A")
 	def i_verify_the_QoA_in_the_Building_A() {
 		Mobile.verifyElementExist(findTestObject('Dashboard Objects/android.widget.ImageButton0 Lateral button'), 0)
-		
+
 		Mobile.tap(findTestObject('Dashboard Objects/android.widget.ImageButton0 Lateral button'), 0)
-		
+
 		Mobile.verifyElementExist(findTestObject('Dashboard Objects/android.widget.TextView0 - Not logged in'), 0)
-		
+
 		Mobile.verifyElementText(findTestObject('Dashboard Objects/android.widget.TextView0 - Not logged in'), 'Not logged in')
-		
+
 		Mobile.verifyElementExist(findTestObject('Dashboard Objects/android.widget.CheckedTextView0 - Dashboard'), 0)
-		
+
 		Mobile.tap(findTestObject('Dashboard Objects/android.widget.CheckedTextView0 - Dashboard'), 0)
-		
+
 		Mobile.verifyElementExist(findTestObject('Dashboard Objects/android.widget.TextView0 - DASHBOARD'), 0)
-		
+
 		Mobile.verifyElementText(findTestObject('Dashboard Objects/android.widget.TextView0 - DASHBOARD'), 'DASHBOARD')
-		
+
 		Mobile.verifyElementExist(findTestObject('Dashboard Objects/android.widget.TextView0 - EDIFCIO A'), 0)
-		
+
 		Mobile.verifyElementText(findTestObject('Dashboard Objects/android.widget.TextView0 - EDIFCIO A'), 'EDIFÍCIO A')
-		
+
 		Mobile.verifyElementExist(findTestObject('Dashboard Objects/android.widget.TextView0 - Edificio A'), 0)
-		
+
 		Mobile.verifyElementText(findTestObject('Dashboard Objects/android.widget.TextView0 - Edificio A'), 'Edificio A')
-		
+
 		Mobile.closeApplication()
 	}
 }

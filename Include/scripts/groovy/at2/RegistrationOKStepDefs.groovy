@@ -50,8 +50,7 @@ import cucumber.api.java.en.When
 class RegistrationOKStepDefs {
 	@Given("I am at the registration screen")
 	def i_am_at_the_registration_screen() {
-		Mobile.startApplication('E:\\Aulas\\3 Ano 1 Semestre\\TAES\\Projeto\\project\\app\\build\\outputs\\apk\\debug\\app-debug.apk',
-				false)
+		Mobile.startApplication(GlobalVariable.appPath, false)
 
 		Mobile.verifyElementExist(findTestObject('AT2 Objects/android.widget.ImageButton0'), 0)
 
