@@ -1,4 +1,4 @@
-package at5
+package at6
 import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
 import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
 import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
@@ -47,22 +47,28 @@ import cucumber.api.java.en.Then
 import cucumber.api.java.en.When
 
 
-class CheckRoomsOKStepDefs {
-	@When("I click on the room selector")
-	def i_click_on_the_room_selector() {
-		Mobile.verifyElementExist(findTestObject('AT5 - Check Rooms/android.widget.Spinner Room Change'), 0)
+import io.appium.java_client.AppiumDriver
 
-		Mobile.tap(findTestObject('AT5 - Check Rooms/android.widget.Spinner Room Change'), 0)
 
-		Mobile.verifyElementExist(findTestObject('AT5 - Check Rooms/android.widget.CheckedTextView0 - Room A'), 0)
 
-		Mobile.verifyElementExist(findTestObject('AT5 - Check Rooms/android.widget.CheckedTextView0 - Room B'), 0)
-
-		Mobile.verifyElementExist(findTestObject('AT5 - Check Rooms/android.widget.CheckedTextView0 - Room C'), 0)
+class TwitterShareNotOkStepDefs {
+	@When("I have connection issues")
+	def i_have_connection_issues() {
+		Mobile.toggleAirplaneMode('yes')
 	}
-
-	@Then("I can check the QoA in the various rooms")
-	def i_can_check_the_QoA_in_the_various_rooms() {
+	
+	@Then("I cant share the message on twitter")
+	def i_cant_share_the_message_on_twitter() {
+		AppiumDriver<?> driver = MobileDriverFactory.getDriver()
+		
+		def toast = driver.findElementByXPath('//android.widget.Toast[@text=\'An error occurred while trying to send the Tweet!\']')
+		
+		println('Toast element: ' + toast)
+		
+		if (toast == null) {
+			KeywordUtil.markFailed('ERROR: Toast object not found!')
+		}
+		
 		Mobile.closeApplication()
 	}
 }

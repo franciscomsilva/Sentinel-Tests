@@ -1,4 +1,4 @@
-package at5
+package at6
 import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
 import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
 import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
@@ -47,22 +47,52 @@ import cucumber.api.java.en.Then
 import cucumber.api.java.en.When
 
 
-class CheckRoomsOKStepDefs {
-	@When("I click on the room selector")
-	def i_click_on_the_room_selector() {
-		Mobile.verifyElementExist(findTestObject('AT5 - Check Rooms/android.widget.Spinner Room Change'), 0)
+import io.appium.java_client.AppiumDriver
 
-		Mobile.tap(findTestObject('AT5 - Check Rooms/android.widget.Spinner Room Change'), 0)
 
-		Mobile.verifyElementExist(findTestObject('AT5 - Check Rooms/android.widget.CheckedTextView0 - Room A'), 0)
 
-		Mobile.verifyElementExist(findTestObject('AT5 - Check Rooms/android.widget.CheckedTextView0 - Room B'), 0)
-
-		Mobile.verifyElementExist(findTestObject('AT5 - Check Rooms/android.widget.CheckedTextView0 - Room C'), 0)
+class TwitterShareOKStepDefs {
+	@When("I press the share button")
+	def i_press_the_share_button() {
+		Mobile.verifyElementExist(findTestObject('AT6 - Twitter Objects/android.widget.ImageButton0 Share button'), 0)
+		
+		Mobile.tap(findTestObject('AT6 - Twitter Objects/android.widget.ImageButton0 Share button'), 0)
+		
+		
 	}
-
-	@Then("I can check the QoA in the various rooms")
-	def i_can_check_the_QoA_in_the_various_rooms() {
+	
+	@When("I authorize the app for twitter")
+	def i_authorize_the_app_for_twitter() {
+		Mobile.verifyElementExist(findTestObject('AT6 - Twitter Objects/android.widget.Button0 - Authorize app'), 0)
+		
+		Mobile.tap(findTestObject('AT6 - Twitter Objects/android.widget.Button0 - Authorize app'), 0)
+		
+		
+	}
+	
+	@When("edit the message to tweet")
+	def edit_the_message_to_tweet() {
+	}
+	
+	@When("press the tweet button")
+	def press_the_tweet_button() {
+		Mobile.verifyElementExist(findTestObject('AT6 - Twitter Objects/android.widget.Button0 - Tweet'), 0)
+		
+		Mobile.tap(findTestObject('AT6 - Twitter Objects/android.widget.Button0 - Tweet'), 0)
+		
+		
+	}
+	
+	@Then("I can share the message on twitter")
+	def i_can_share_the_message_on_twitter() {
+		AppiumDriver<?> driver = MobileDriverFactory.getDriver()
+		def toast = driver.findElementByXPath("//android.widget.Toast[@text='Tweet sent successfully!']")
+		println("Toast element: " + toast)
+		if (toast == null) {
+			KeywordUtil.markFailed('ERROR: Toast object not found!')
+		}
+		
 		Mobile.closeApplication()
 	}
+	
 }
