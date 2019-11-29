@@ -50,40 +50,36 @@ import cucumber.api.java.en.When
 class LogoutOKStepDefs {
 	@Given("I am logged in")
 	def i_am_logged_in() {
-		Mobile.startApplication('E:\\Aulas\\3 Ano 1 Semestre\\TAES\\Projeto\\project\\app\\build\\outputs\\apk\\debug\\app-debug.apk',
-			false)
-		
+		Mobile.startApplication(GlobalVariable.appPath, false)
+
 		Mobile.tap(findTestObject('AT3 Objects/android.widget.ImageButton0 Lateral Menu Button'), 0)
-		
+
 		Mobile.tap(findTestObject('AT3 Objects/android.widget.CheckedTextView0 - Login'), 0)
-		
+
 		Mobile.setText(findTestObject('AT3 Objects/android.widget.EditText0 - E-mail'), 'email@gmail.com', 0)
-		
+
 		Mobile.setText(findTestObject('AT3 Objects/android.widget.EditText0 - Password'), '123456', 0)
-		
+
 		Mobile.tap(findTestObject('AT3 Objects/android.widget.ImageButton0 Login Button'), 0)
-		
 	}
-	
+
 	@When("I click the logout button")
 	def i_click_the_logout_button() {
 		Mobile.tap(findTestObject('AT3 Objects/android.widget.ImageButton0 Lateral Menu Button'), 0)
-		
+
 		Mobile.verifyElementExist(findTestObject('AT3 Objects/android.widget.TextView0 - emailgmail.com'), 0)
-		
+
 		Mobile.verifyElementExist(findTestObject('AT4 - Logout/android.widget.CheckedTextView0 - Logout'), 0)
-		
+
 		Mobile.tap(findTestObject('AT4 - Logout/android.widget.CheckedTextView0 - Logout'), 0)
-		
-		
 	}
-	
+
 	@Then("I logout of my account")
 	def i_logout_of_my_account() {
 		Mobile.tap(findTestObject('AT3 Objects/android.widget.ImageButton0 Lateral Menu Button'), 0)
-		
+
 		Mobile.verifyElementExist(findTestObject('Dashboard Objects/android.widget.TextView0 - Not logged in'), 0)
-		
+
 		Mobile.closeApplication()
 	}
 }
