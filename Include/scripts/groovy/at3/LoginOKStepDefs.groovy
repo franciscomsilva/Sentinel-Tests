@@ -51,32 +51,28 @@ class LoginOKStepDefs {
 	@Given("I am at the login page")
 	def i_am_at_the_login_page() {
 		Mobile.startApplication('E:\\Aulas\\3 Ano 1 Semestre\\TAES\\Projeto\\project\\app\\build\\outputs\\apk\\debug\\app-debug.apk',
-			false)
-		
+				false)
+
 		Mobile.tap(findTestObject('AT3 Objects/android.widget.ImageButton0 Lateral Menu Button'), 0)
-		
+
 		Mobile.tap(findTestObject('AT3 Objects/android.widget.CheckedTextView0 - Login'), 0)
-		
-		
 	}
-	
+
 	@When("I provide the correct login fields")
 	def i_provide_the_correct_login_fields() {
 		Mobile.setText(findTestObject('AT3 Objects/android.widget.EditText0 - E-mail'), 'email@gmail.com', 0)
-		
+
 		Mobile.setText(findTestObject('AT3 Objects/android.widget.EditText0 - Password'), '123456', 0)
-		
-		
 	}
-	
+
 	@Then("I login to my account")
 	def i_login_to_my_account() {
 		Mobile.tap(findTestObject('AT3 Objects/android.widget.ImageButton0 Login Button'), 0)
-		
+
 		Mobile.tap(findTestObject('AT3 Objects/android.widget.ImageButton0 Lateral Menu Button'), 0)
-		
+
 		Mobile.verifyElementExist(findTestObject('AT3 Objects/android.widget.TextView0 - emailgmail.com'), 0)
-		
+
 		Mobile.closeApplication()
 	}
 }
