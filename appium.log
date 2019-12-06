@@ -1,20 +1,20 @@
 [35m[Appium][39m Welcome to Appium v1.15.1
 [35m[Appium][39m Non-default server args:
-[35m[Appium][39m   port: 50194
+[35m[Appium][39m   port: 55425
 [35m[Appium][39m   loglevel: info
-[35m[Appium][39m   chromeDriverPort: 50195
-[35m[Appium][39m   tmpDir: C:\Users\henri\AppData\Local\Temp\\Katalon\Appium\Temp1575572681771
-[35m[Appium][39m Appium REST http interface listener started on 0.0.0.0:50194
+[35m[Appium][39m   chromeDriverPort: 55426
+[35m[Appium][39m   tmpDir: C:\Users\henri\AppData\Local\Temp\\Katalon\Appium\Temp1575594814835
+[35m[Appium][39m Appium REST http interface listener started on 0.0.0.0:55425
 [35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/status[39m
 [35m[HTTP][39m [90m{}[39m
-[35m[HTTP][39m [37m<-- GET /wd/hub/status [39m[32m200[39m [90m9 ms - 68[39m
+[35m[HTTP][39m [37m<-- GET /wd/hub/status [39m[32m200[39m [90m8 ms - 68[39m
 [35m[HTTP][39m [90m[39m
 [35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/status[39m
 [35m[HTTP][39m [90m{}[39m
-[35m[HTTP][39m [37m<-- GET /wd/hub/status [39m[32m200[39m [90m1 ms - 68[39m
+[35m[HTTP][39m [37m<-- GET /wd/hub/status [39m[32m200[39m [90m2 ms - 68[39m
 [35m[HTTP][39m [90m[39m
 [35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session[39m
-[35m[HTTP][39m [90m{"desiredCapabilities":{"app":"E:\\Aulas\\3 Ano 1 Semestre\\TAES\\Projeto\\project\\app\\build\\outputs\\apk\\debug\\app-debug.apk","noReset":true,"newCommandTimeout":1800,"platformVersion":"P","autoGrantPermissions":true,"platformName":"Android","udid":"emulator-5554","deviceName":"emulator-5554 (Android SDK built for x86 - Android P)","fullReset":false,"platform":"ANDROID","systemPort":50202},"capabilities":{"firstMatch":[{"appium:app":"E:\\Aulas\\3 Ano 1 Semestre\\TAES\\Projeto\\project\\app\\build\\outputs\\apk\\debug\\app-debug.apk","appium:autoGrantPermissions":true,"appium:deviceName":"emulator-5554 (Android SDK built for x86 - Android P)","appium:fullReset":false,"appium:newCommandTimeout":1800,"appium:noReset":true,"platform":"ANDROID","platformName":"android","appium:platformVersion":"P","appium:systemPort":50202,"appium:udid":"emulator-5554"}]}}[39m
+[35m[HTTP][39m [90m{"desiredCapabilities":{"app":"E:\\Aulas\\3 Ano 1 Semestre\\TAES\\Projeto\\project\\app\\build\\outputs\\apk\\debug\\app-debug.apk","noReset":true,"newCommandTimeout":1800,"platformVersion":"P","autoGrantPermissions":true,"platformName":"Android","udid":"emulator-5554","deviceName":"emulator-5554 (Android SDK built for x86 - Android P)","fullReset":false,"platform":"ANDROID","systemPort":55432},"capabilities":{"firstMatch":[{"appium:app":"E:\\Aulas\\3 Ano 1 Semestre\\TAES\\Projeto\\project\\app\\build\\outputs\\apk\\debug\\app-debug.apk","appium:autoGrantPermissions":true,"appium:deviceName":"emulator-5554 (Android SDK built for x86 - Android P)","appium:fullReset":false,"appium:newCommandTimeout":1800,"appium:noReset":true,"platform":"ANDROID","platformName":"android","appium:platformVersion":"P","appium:systemPort":55432,"appium:udid":"emulator-5554"}]}}[39m
 [35m[BaseDriver][39m The capabilities ["platform"] are not standard capabilities and should have an extension prefix
 [35m[Appium][39m 
 [35m[Appium][39m ======================================================================
@@ -45,7 +45,7 @@
 [35m[Appium][39m Appium v1.15.1 creating new AndroidUiautomator2Driver (v1.37.2) session
 [35m[BaseDriver][39m The following capabilities were provided, but are not recognized by Appium:
 [35m[BaseDriver][39m   platform
-[35m[BaseDriver][39m Session created with session id: 62e7f6c6-78ac-4ac8-b3a4-a4f09fb8c24b
+[35m[BaseDriver][39m Session created with session id: 95d04da6-f111-4996-96a2-1b7ee3a06bdb
 [35m[BaseDriver][39m Using local app 'E:\Aulas\3 Ano 1 Semestre\TAES\Projeto\project\app\build\outputs\apk\debug\app-debug.apk'
 [35m[ADB][39m Found 1 'build-tools' folders under 'C:\Users\henri\.katalon\tools\android_sdk' (newest first):
 [35m[ADB][39m     C:/Users/henri/.katalon/tools/android_sdk/build-tools/29.0.2
@@ -76,57 +76,137 @@
 [35m[WD Proxy][39m Determined the downstream protocol as 'W3C'
 [35m[AndroidDriver][39m Screen already unlocked, doing nothing
 [35m[UiAutomator2][39m Starting 'pt.ipleiria.estg.dei.sentinel/pt.ipleiria.estg.dei.sentinel.activities.MainActivity and waiting for 'pt.ipleiria.estg.dei.sentinel/pt.ipleiria.estg.dei.sentinel.activities.MainActivity'
-[35m[Appium][39m New AndroidUiautomator2Driver session created successfully, session 62e7f6c6-78ac-4ac8-b3a4-a4f09fb8c24b added to master session list
-[35m[HTTP][39m [37m<-- POST /wd/hub/session [39m[32m200[39m [90m19480 ms - 1294[39m
+[35m[Appium][39m New AndroidUiautomator2Driver session created successfully, session 95d04da6-f111-4996-96a2-1b7ee3a06bdb added to master session list
+[35m[HTTP][39m [37m<-- POST /wd/hub/session [39m[32m200[39m [90m16916 ms - 1294[39m
 [35m[HTTP][39m [90m[39m
-[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/62e7f6c6-78ac-4ac8-b3a4-a4f09fb8c24b[39m
+[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/95d04da6-f111-4996-96a2-1b7ee3a06bdb[39m
 [35m[HTTP][39m [90m{}[39m
-[35m[HTTP][39m [37m<-- GET /wd/hub/session/62e7f6c6-78ac-4ac8-b3a4-a4f09fb8c24b [39m[32m200[39m [90m71 ms - 1226[39m
+[35m[HTTP][39m [37m<-- GET /wd/hub/session/95d04da6-f111-4996-96a2-1b7ee3a06bdb [39m[32m200[39m [90m81 ms - 1226[39m
 [35m[HTTP][39m [90m[39m
-[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/62e7f6c6-78ac-4ac8-b3a4-a4f09fb8c24b[39m
+[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/95d04da6-f111-4996-96a2-1b7ee3a06bdb[39m
 [35m[HTTP][39m [90m{}[39m
-[35m[HTTP][39m [37m<-- GET /wd/hub/session/62e7f6c6-78ac-4ac8-b3a4-a4f09fb8c24b [39m[32m200[39m [90m39 ms - 1226[39m
+[35m[HTTP][39m [37m<-- GET /wd/hub/session/95d04da6-f111-4996-96a2-1b7ee3a06bdb [39m[32m200[39m [90m33 ms - 1226[39m
 [35m[HTTP][39m [90m[39m
 [35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/status[39m
 [35m[HTTP][39m [90m{}[39m
-[35m[HTTP][39m [37m<-- GET /wd/hub/status [39m[32m200[39m [90m1 ms - 68[39m
+[35m[HTTP][39m [37m<-- GET /wd/hub/status [39m[32m200[39m [90m2 ms - 68[39m
 [35m[HTTP][39m [90m[39m
-[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/62e7f6c6-78ac-4ac8-b3a4-a4f09fb8c24b/timeouts[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/95d04da6-f111-4996-96a2-1b7ee3a06bdb/timeouts[39m
 [35m[HTTP][39m [90m{"implicit":60000}[39m
-[35m[HTTP][39m [37m<-- POST /wd/hub/session/62e7f6c6-78ac-4ac8-b3a4-a4f09fb8c24b/timeouts [39m[32m200[39m [90m4 ms - 14[39m
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/95d04da6-f111-4996-96a2-1b7ee3a06bdb/timeouts [39m[32m200[39m [90m8 ms - 14[39m
 [35m[HTTP][39m [90m[39m
-[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/62e7f6c6-78ac-4ac8-b3a4-a4f09fb8c24b/source[39m
+[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/95d04da6-f111-4996-96a2-1b7ee3a06bdb/source[39m
 [35m[HTTP][39m [90m{}[39m
-[35m[W3C (62e7f6c6)][39m Driver proxy active, passing request on via HTTP proxy
-[35m[WD Proxy][39m Replacing sessionId 5f372577-7f4e-45af-9271-192834da0dcf with 62e7f6c6-78ac-4ac8-b3a4-a4f09fb8c24b
-[35m[HTTP][39m [37m<-- GET /wd/hub/session/62e7f6c6-78ac-4ac8-b3a4-a4f09fb8c24b/source [39m[32m200[39m [90m215 ms - 11303[39m
+[35m[W3C (95d04da6)][39m Driver proxy active, passing request on via HTTP proxy
+[35m[WD Proxy][39m Replacing sessionId f6bde0c4-5ef3-487f-841b-a696120f1bf0 with 95d04da6-f111-4996-96a2-1b7ee3a06bdb
+[35m[HTTP][39m [37m<-- GET /wd/hub/session/95d04da6-f111-4996-96a2-1b7ee3a06bdb/source [39m[32m200[39m [90m1125 ms - 12301[39m
 [35m[HTTP][39m [90m[39m
-[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/62e7f6c6-78ac-4ac8-b3a4-a4f09fb8c24b/screenshot[39m
+[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/95d04da6-f111-4996-96a2-1b7ee3a06bdb/screenshot[39m
 [35m[HTTP][39m [90m{}[39m
-[35m[HTTP][39m [37m<-- GET /wd/hub/session/62e7f6c6-78ac-4ac8-b3a4-a4f09fb8c24b/screenshot [39m[32m200[39m [90m376 ms - 169216[39m
+[35m[HTTP][39m [37m<-- GET /wd/hub/session/95d04da6-f111-4996-96a2-1b7ee3a06bdb/screenshot [39m[32m200[39m [90m441 ms - 212424[39m
 [35m[HTTP][39m [90m[39m
-[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/62e7f6c6-78ac-4ac8-b3a4-a4f09fb8c24b/source[39m
+[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/95d04da6-f111-4996-96a2-1b7ee3a06bdb/source[39m
 [35m[HTTP][39m [90m{}[39m
-[35m[W3C (62e7f6c6)][39m Driver proxy active, passing request on via HTTP proxy
-[35m[WD Proxy][39m Replacing sessionId 5f372577-7f4e-45af-9271-192834da0dcf with 62e7f6c6-78ac-4ac8-b3a4-a4f09fb8c24b
-[35m[HTTP][39m [37m<-- GET /wd/hub/session/62e7f6c6-78ac-4ac8-b3a4-a4f09fb8c24b/source [39m[32m200[39m [90m300 ms - 20816[39m
+[35m[W3C (95d04da6)][39m Driver proxy active, passing request on via HTTP proxy
+[35m[WD Proxy][39m Replacing sessionId f6bde0c4-5ef3-487f-841b-a696120f1bf0 with 95d04da6-f111-4996-96a2-1b7ee3a06bdb
+[35m[HTTP][39m [37m<-- GET /wd/hub/session/95d04da6-f111-4996-96a2-1b7ee3a06bdb/source [39m[32m200[39m [90m373 ms - 20816[39m
 [35m[HTTP][39m [90m[39m
-[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/62e7f6c6-78ac-4ac8-b3a4-a4f09fb8c24b/screenshot[39m
+[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/95d04da6-f111-4996-96a2-1b7ee3a06bdb/screenshot[39m
 [35m[HTTP][39m [90m{}[39m
-[35m[HTTP][39m [37m<-- GET /wd/hub/session/62e7f6c6-78ac-4ac8-b3a4-a4f09fb8c24b/screenshot [39m[32m200[39m [90m346 ms - 132154[39m
+[35m[HTTP][39m [37m<-- GET /wd/hub/session/95d04da6-f111-4996-96a2-1b7ee3a06bdb/screenshot [39m[32m200[39m [90m397 ms - 131968[39m
 [35m[HTTP][39m [90m[39m
-[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/62e7f6c6-78ac-4ac8-b3a4-a4f09fb8c24b/source[39m
+[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/95d04da6-f111-4996-96a2-1b7ee3a06bdb/source[39m
 [35m[HTTP][39m [90m{}[39m
-[35m[W3C (62e7f6c6)][39m Driver proxy active, passing request on via HTTP proxy
-[35m[WD Proxy][39m Replacing sessionId 5f372577-7f4e-45af-9271-192834da0dcf with 62e7f6c6-78ac-4ac8-b3a4-a4f09fb8c24b
-[35m[HTTP][39m [37m<-- GET /wd/hub/session/62e7f6c6-78ac-4ac8-b3a4-a4f09fb8c24b/source [39m[32m200[39m [90m107 ms - 7573[39m
+[35m[W3C (95d04da6)][39m Driver proxy active, passing request on via HTTP proxy
+[35m[WD Proxy][39m Replacing sessionId f6bde0c4-5ef3-487f-841b-a696120f1bf0 with 95d04da6-f111-4996-96a2-1b7ee3a06bdb
+[35m[HTTP][39m [37m<-- GET /wd/hub/session/95d04da6-f111-4996-96a2-1b7ee3a06bdb/source [39m[32m200[39m [90m142 ms - 7573[39m
 [35m[HTTP][39m [90m[39m
-[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/62e7f6c6-78ac-4ac8-b3a4-a4f09fb8c24b/screenshot[39m
+[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/95d04da6-f111-4996-96a2-1b7ee3a06bdb/screenshot[39m
 [35m[HTTP][39m [90m{}[39m
-[35m[HTTP][39m [37m<-- GET /wd/hub/session/62e7f6c6-78ac-4ac8-b3a4-a4f09fb8c24b/screenshot [39m[32m200[39m [90m310 ms - 62360[39m
+[35m[HTTP][39m [37m<-- GET /wd/hub/session/95d04da6-f111-4996-96a2-1b7ee3a06bdb/screenshot [39m[32m200[39m [90m366 ms - 62158[39m
 [35m[HTTP][39m [90m[39m
-[35m[HTTP][39m [37m-->[39m [37mDELETE[39m [37m/wd/hub/session/62e7f6c6-78ac-4ac8-b3a4-a4f09fb8c24b[39m
+[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/95d04da6-f111-4996-96a2-1b7ee3a06bdb/source[39m
 [35m[HTTP][39m [90m{}[39m
-[35m[Appium][39m Removing session 62e7f6c6-78ac-4ac8-b3a4-a4f09fb8c24b from our master session list
-[35m[HTTP][39m [37m<-- DELETE /wd/hub/session/62e7f6c6-78ac-4ac8-b3a4-a4f09fb8c24b [39m[32m200[39m [90m415 ms - 14[39m
+[35m[W3C (95d04da6)][39m Driver proxy active, passing request on via HTTP proxy
+[35m[WD Proxy][39m Replacing sessionId f6bde0c4-5ef3-487f-841b-a696120f1bf0 with 95d04da6-f111-4996-96a2-1b7ee3a06bdb
+[35m[HTTP][39m [37m<-- GET /wd/hub/session/95d04da6-f111-4996-96a2-1b7ee3a06bdb/source [39m[32m200[39m [90m59 ms - 3213[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/95d04da6-f111-4996-96a2-1b7ee3a06bdb/screenshot[39m
+[35m[HTTP][39m [90m{}[39m
+[35m[HTTP][39m [37m<-- GET /wd/hub/session/95d04da6-f111-4996-96a2-1b7ee3a06bdb/screenshot [39m[32m200[39m [90m396 ms - 78982[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/95d04da6-f111-4996-96a2-1b7ee3a06bdb/source[39m
+[35m[HTTP][39m [90m{}[39m
+[35m[W3C (95d04da6)][39m Driver proxy active, passing request on via HTTP proxy
+[35m[WD Proxy][39m Replacing sessionId f6bde0c4-5ef3-487f-841b-a696120f1bf0 with 95d04da6-f111-4996-96a2-1b7ee3a06bdb
+[35m[HTTP][39m [37m<-- GET /wd/hub/session/95d04da6-f111-4996-96a2-1b7ee3a06bdb/source [39m[32m200[39m [90m123 ms - 7573[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/95d04da6-f111-4996-96a2-1b7ee3a06bdb/screenshot[39m
+[35m[HTTP][39m [90m{}[39m
+[35m[HTTP][39m [37m<-- GET /wd/hub/session/95d04da6-f111-4996-96a2-1b7ee3a06bdb/screenshot [39m[32m200[39m [90m395 ms - 62880[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/95d04da6-f111-4996-96a2-1b7ee3a06bdb/source[39m
+[35m[HTTP][39m [90m{}[39m
+[35m[W3C (95d04da6)][39m Driver proxy active, passing request on via HTTP proxy
+[35m[WD Proxy][39m Replacing sessionId f6bde0c4-5ef3-487f-841b-a696120f1bf0 with 95d04da6-f111-4996-96a2-1b7ee3a06bdb
+[35m[HTTP][39m [37m<-- GET /wd/hub/session/95d04da6-f111-4996-96a2-1b7ee3a06bdb/source [39m[32m200[39m [90m128 ms - 8984[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/95d04da6-f111-4996-96a2-1b7ee3a06bdb/screenshot[39m
+[35m[HTTP][39m [90m{}[39m
+[35m[HTTP][39m [37m<-- GET /wd/hub/session/95d04da6-f111-4996-96a2-1b7ee3a06bdb/screenshot [39m[32m200[39m [90m378 ms - 58254[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/95d04da6-f111-4996-96a2-1b7ee3a06bdb/source[39m
+[35m[HTTP][39m [90m{}[39m
+[35m[W3C (95d04da6)][39m Driver proxy active, passing request on via HTTP proxy
+[35m[WD Proxy][39m Replacing sessionId f6bde0c4-5ef3-487f-841b-a696120f1bf0 with 95d04da6-f111-4996-96a2-1b7ee3a06bdb
+[35m[HTTP][39m [37m<-- GET /wd/hub/session/95d04da6-f111-4996-96a2-1b7ee3a06bdb/source [39m[32m200[39m [90m108 ms - 7569[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/95d04da6-f111-4996-96a2-1b7ee3a06bdb/screenshot[39m
+[35m[HTTP][39m [90m{}[39m
+[35m[HTTP][39m [37m<-- GET /wd/hub/session/95d04da6-f111-4996-96a2-1b7ee3a06bdb/screenshot [39m[32m200[39m [90m371 ms - 61490[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/95d04da6-f111-4996-96a2-1b7ee3a06bdb/source[39m
+[35m[HTTP][39m [90m{}[39m
+[35m[W3C (95d04da6)][39m Driver proxy active, passing request on via HTTP proxy
+[35m[WD Proxy][39m Replacing sessionId f6bde0c4-5ef3-487f-841b-a696120f1bf0 with 95d04da6-f111-4996-96a2-1b7ee3a06bdb
+[35m[HTTP][39m [37m<-- GET /wd/hub/session/95d04da6-f111-4996-96a2-1b7ee3a06bdb/source [39m[32m200[39m [90m126 ms - 8975[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/95d04da6-f111-4996-96a2-1b7ee3a06bdb/screenshot[39m
+[35m[HTTP][39m [90m{}[39m
+[35m[HTTP][39m [37m<-- GET /wd/hub/session/95d04da6-f111-4996-96a2-1b7ee3a06bdb/screenshot [39m[32m200[39m [90m400 ms - 55570[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/95d04da6-f111-4996-96a2-1b7ee3a06bdb/source[39m
+[35m[HTTP][39m [90m{}[39m
+[35m[W3C (95d04da6)][39m Driver proxy active, passing request on via HTTP proxy
+[35m[WD Proxy][39m Replacing sessionId f6bde0c4-5ef3-487f-841b-a696120f1bf0 with 95d04da6-f111-4996-96a2-1b7ee3a06bdb
+[35m[HTTP][39m [37m<-- GET /wd/hub/session/95d04da6-f111-4996-96a2-1b7ee3a06bdb/source [39m[32m200[39m [90m85 ms - 7450[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/95d04da6-f111-4996-96a2-1b7ee3a06bdb/screenshot[39m
+[35m[HTTP][39m [90m{}[39m
+[35m[HTTP][39m [37m<-- GET /wd/hub/session/95d04da6-f111-4996-96a2-1b7ee3a06bdb/screenshot [39m[32m200[39m [90m432 ms - 95280[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/95d04da6-f111-4996-96a2-1b7ee3a06bdb/source[39m
+[35m[HTTP][39m [90m{}[39m
+[35m[W3C (95d04da6)][39m Driver proxy active, passing request on via HTTP proxy
+[35m[WD Proxy][39m Replacing sessionId f6bde0c4-5ef3-487f-841b-a696120f1bf0 with 95d04da6-f111-4996-96a2-1b7ee3a06bdb
+[35m[HTTP][39m [37m<-- GET /wd/hub/session/95d04da6-f111-4996-96a2-1b7ee3a06bdb/source [39m[32m200[39m [90m98 ms - 7450[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/95d04da6-f111-4996-96a2-1b7ee3a06bdb/screenshot[39m
+[35m[HTTP][39m [90m{}[39m
+[35m[HTTP][39m [37m<-- GET /wd/hub/session/95d04da6-f111-4996-96a2-1b7ee3a06bdb/screenshot [39m[32m200[39m [90m392 ms - 94352[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/95d04da6-f111-4996-96a2-1b7ee3a06bdb/source[39m
+[35m[HTTP][39m [90m{}[39m
+[35m[W3C (95d04da6)][39m Driver proxy active, passing request on via HTTP proxy
+[35m[WD Proxy][39m Replacing sessionId f6bde0c4-5ef3-487f-841b-a696120f1bf0 with 95d04da6-f111-4996-96a2-1b7ee3a06bdb
+[35m[HTTP][39m [37m<-- GET /wd/hub/session/95d04da6-f111-4996-96a2-1b7ee3a06bdb/source [39m[32m200[39m [90m97 ms - 7569[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/95d04da6-f111-4996-96a2-1b7ee3a06bdb/screenshot[39m
+[35m[HTTP][39m [90m{}[39m
+[35m[HTTP][39m [37m<-- GET /wd/hub/session/95d04da6-f111-4996-96a2-1b7ee3a06bdb/screenshot [39m[32m200[39m [90m411 ms - 60644[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mDELETE[39m [37m/wd/hub/session/95d04da6-f111-4996-96a2-1b7ee3a06bdb[39m
+[35m[HTTP][39m [90m{}[39m
+[35m[Appium][39m Removing session 95d04da6-f111-4996-96a2-1b7ee3a06bdb from our master session list
+[35m[HTTP][39m [37m<-- DELETE /wd/hub/session/95d04da6-f111-4996-96a2-1b7ee3a06bdb [39m[32m200[39m [90m388 ms - 14[39m
 [35m[HTTP][39m [90m[39m
