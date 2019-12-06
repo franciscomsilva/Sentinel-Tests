@@ -9,4 +9,9 @@
       <initValue>'E:\\Aulas\\3 Ano 1 Semestre\\TAES\\Projeto\\project\\app\\build\\outputs\\apk\\debug\\app-debug.apk'</initValue>
       <name>appPath</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'pt.ipleiria.estg.dei.sentinel'</initValue>
+      <name>appID</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>

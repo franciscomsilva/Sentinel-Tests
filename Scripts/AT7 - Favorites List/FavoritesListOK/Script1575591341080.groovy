@@ -14,11 +14,8 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
-import com.kms.katalon.core.mobile.keyword.internal.MobileDriverFactory as MobileDriverFactory
-import io.appium.java_client.AppiumDriver as AppiumDriver
-import com.kms.katalon.core.util.KeywordUtil as KeywordUtil
 
-Mobile.startApplication(GlobalVariable.appPath, false)
+Mobile.startExistingApplication(GlobalVariable.appID, FailureHandling.STOP_ON_FAILURE)
 
 Mobile.tap(findTestObject('AT3 Objects/android.widget.ImageButton0 Lateral Menu Button'), 0)
 
@@ -30,27 +27,22 @@ Mobile.setText(findTestObject('AT3 Objects/android.widget.EditText0 - Password')
 
 Mobile.tap(findTestObject('AT3 Objects/android.widget.ImageButton0 Login Button'), 0)
 
-Mobile.verifyElementExist(findTestObject('AT6 - Twitter Objects/android.widget.ImageButton0 Share button'), 0)
+Mobile.verifyElementExist(findTestObject('Dashboard Objects/android.widget.ImageButton0 Lateral button'), 0)
 
-Mobile.tap(findTestObject('AT6 - Twitter Objects/android.widget.ImageButton0 Share button'), 0)
+Mobile.tap(findTestObject('Dashboard Objects/android.widget.ImageButton0 Lateral button'), 0)
 
-Mobile.verifyElementExist(findTestObject('AT6 - Twitter Objects/android.widget.Button0 - Authorize app'), 0)
+Mobile.verifyElementExist(findTestObject('AT7 - Favorites List Objects/android.widget.CheckedTextView0 - Favorites'), 0)
 
-Mobile.tap(findTestObject('AT6 - Twitter Objects/android.widget.Button0 - Authorize app'), 0)
+Mobile.tap(findTestObject('AT7 - Favorites List Objects/android.widget.CheckedTextView0 - Favorites'), 0)
 
-Mobile.verifyElementExist(findTestObject('AT6 - Twitter Objects/android.widget.Button0 - Tweet'), 0)
+Mobile.verifyElementExist(findTestObject('AT7 - Favorites List Objects/android.widget.TextView0 - FAVORITES'), 0)
 
-Mobile.tap(findTestObject('AT6 - Twitter Objects/android.widget.Button0 - Tweet'), 0)
+Mobile.verifyElementText(findTestObject('AT7 - Favorites List Objects/android.widget.TextView0 - FAVORITES'), 'FAVORITES')
 
-AppiumDriver<?> driver = MobileDriverFactory.getDriver()
+Mobile.verifyElementExist(findTestObject('AT7 - Favorites List Objects/android.widget.TextView0 - NO FAVORITES ADDED'), 
+    0)
 
-def toast = driver.findElementByXPath('//android.widget.Toast[@text=\'Tweet sent successfully!\']')
-
-println('Toast element: ' + toast)
-
-if (toast == null) {
-    KeywordUtil.markFailed('ERROR: Toast object not found!')
-}
+Mobile.verifyElementText(findTestObject('AT7 - Favorites List Objects/android.widget.TextView0 - NO FAVORITES ADDED'), 'NO FAVORITES ADDED!')
 
 Mobile.closeApplication()
 

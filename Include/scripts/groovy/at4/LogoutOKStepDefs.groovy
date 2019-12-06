@@ -50,15 +50,25 @@ import cucumber.api.java.en.When
 class LogoutOKStepDefs {
 	@Given("I am logged in")
 	def i_am_logged_in() {
-		Mobile.startApplication(GlobalVariable.appPath, false)
+		Mobile.startExistingApplication(GlobalVariable.appID)
 
+		Mobile.verifyElementExist(findTestObject('AT3 Objects/android.widget.ImageButton0 Lateral Menu Button'), 0)
+		
 		Mobile.tap(findTestObject('AT3 Objects/android.widget.ImageButton0 Lateral Menu Button'), 0)
 
+		Mobile.verifyElementExist(findTestObject('AT3 Objects/android.widget.CheckedTextView0 - Login'), 0)
+		
 		Mobile.tap(findTestObject('AT3 Objects/android.widget.CheckedTextView0 - Login'), 0)
+		
+		Mobile.verifyElementExist(findTestObject('AT3 Objects/android.widget.EditText0 - E-mail'), 0)
 
 		Mobile.setText(findTestObject('AT3 Objects/android.widget.EditText0 - E-mail'), 'email@gmail.com', 0)
 
+		Mobile.verifyElementExist(findTestObject('AT3 Objects/android.widget.EditText0 - Password'), 0)
+		
 		Mobile.setText(findTestObject('AT3 Objects/android.widget.EditText0 - Password'), '123456', 0)
+		
+		Mobile.verifyElementExist(findTestObject('AT3 Objects/android.widget.ImageButton0 Login Button'), 0)
 
 		Mobile.tap(findTestObject('AT3 Objects/android.widget.ImageButton0 Login Button'), 0)
 	}

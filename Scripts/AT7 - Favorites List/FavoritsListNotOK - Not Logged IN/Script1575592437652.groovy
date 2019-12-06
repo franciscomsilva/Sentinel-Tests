@@ -25,21 +25,10 @@ Mobile.verifyElementExist(findTestObject('Dashboard Objects/android.widget.TextV
 
 Mobile.verifyElementText(findTestObject('Dashboard Objects/android.widget.TextView0 - Not logged in'), 'Not logged in')
 
-Mobile.verifyElementExist(findTestObject('Dashboard Objects/android.widget.CheckedTextView0 - Dashboard'), 0)
+Mobile.verifyElementNotExist(findTestObject('AT7 - Favorites List Objects/android.widget.CheckedTextView0 - Favorites'), 2)
 
-Mobile.tap(findTestObject('Dashboard Objects/android.widget.CheckedTextView0 - Dashboard'), 0)
+Mobile.verifyElementNotExist(findTestObject('AT7 - Favorites List Objects/android.widget.TextView0 - FAVORITES'), 2)
 
-Mobile.verifyElementExist(findTestObject('Dashboard Objects/android.widget.TextView0 - DASHBOARD'), 0)
-
-Mobile.verifyElementText(findTestObject('Dashboard Objects/android.widget.TextView0 - DASHBOARD'), 'DASHBOARD')
-
-Mobile.verifyElementExist(findTestObject('Dashboard Objects/android.widget.TextView0 - EDIFCIO A'), 0)
-
-Mobile.verifyElementText(findTestObject('Dashboard Objects/android.widget.TextView0 - EDIFCIO A'), 'EDIFÍCIO A')
-
-Mobile.verifyElementExist(findTestObject('Dashboard Objects/android.widget.TextView0 - Edificio A'), 0)
-
-Mobile.verifyElementText(findTestObject('Dashboard Objects/android.widget.TextView0 - Edificio A'), 'Edificio A')
+Mobile.verifyElementNotExist(findTestObject('AT7 - Favorites List Objects/android.widget.TextView0 - NO FAVORITES ADDED'), 2)
 
 Mobile.closeApplication()
-

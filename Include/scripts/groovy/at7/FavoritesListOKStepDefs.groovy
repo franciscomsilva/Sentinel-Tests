@@ -1,4 +1,4 @@
-package at6
+package at7
 import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
 import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
 import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
@@ -47,27 +47,28 @@ import cucumber.api.java.en.Then
 import cucumber.api.java.en.When
 
 
-import io.appium.java_client.AppiumDriver
-
-
-
-class TwitterShareNotOkStepDefs {
-	@When("I have connection issues")
-	def i_have_connection_issues() {
-		Mobile.toggleAirplaneMode('on')
+class FavoritesListOKStepDefs {
+	@When("I press the Favorites button on the side tab")
+	def i_press_the_Favorites_button_on_the_side_tab() {
+		Mobile.verifyElementExist(findTestObject('Dashboard Objects/android.widget.ImageButton0 Lateral button'), 0)
+		
+		Mobile.tap(findTestObject('Dashboard Objects/android.widget.ImageButton0 Lateral button'), 0)
+		
+		Mobile.verifyElementExist(findTestObject('AT7 - Favorites List Objects/android.widget.CheckedTextView0 - Favorites'), 0)
+		
+		Mobile.tap(findTestObject('AT7 - Favorites List Objects/android.widget.CheckedTextView0 - Favorites'), 0)
+		
+		Mobile.verifyElementExist(findTestObject('AT7 - Favorites List Objects/android.widget.TextView0 - FAVORITES'), 0)
+		
+		Mobile.verifyElementText(findTestObject('AT7 - Favorites List Objects/android.widget.TextView0 - FAVORITES'), 'FAVORITES')
+		
 	}
-	
-	@Then("I cant share the message on twitter")
-	def i_cant_share_the_message_on_twitter() {
-		AppiumDriver<?> driver = MobileDriverFactory.getDriver()
+
+	@Then("I can check that there are no favorites added")
+	def i_can_check_that_there_are_no_favorites_added() {
+		Mobile.verifyElementExist(findTestObject('AT7 - Favorites List Objects/android.widget.TextView0 - NO FAVORITES ADDED'), 0)
 		
-		def toast = driver.findElementByXPath('//android.widget.Toast[@text=\'An error occurred while trying to send the Tweet!\']')
-		
-		println('Toast element: ' + toast)
-		
-		if (toast == null) {
-			KeywordUtil.markFailed('ERROR: Toast object not found!')
-		}
+		Mobile.verifyElementText(findTestObject('AT7 - Favorites List Objects/android.widget.TextView0 - NO FAVORITES ADDED'), 'NO FAVORITES ADDED!')
 		
 		Mobile.closeApplication()
 	}

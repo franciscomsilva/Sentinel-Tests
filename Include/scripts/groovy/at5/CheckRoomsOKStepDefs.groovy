@@ -53,12 +53,12 @@ class CheckRoomsOKStepDefs {
 		Mobile.verifyElementExist(findTestObject('AT5 - Check Rooms/android.widget.Spinner Room Change'), 0)
 
 		Mobile.tap(findTestObject('AT5 - Check Rooms/android.widget.Spinner Room Change'), 0)
-
+		
 		Mobile.verifyElementExist(findTestObject('AT5 - Check Rooms/android.widget.CheckedTextView0 - Room A'), 0)
 
 		Mobile.verifyElementExist(findTestObject('AT5 - Check Rooms/android.widget.CheckedTextView0 - Room B'), 0)
 
-		Mobile.verifyElementExist(findTestObject('AT5 - Check Rooms/android.widget.CheckedTextView0 - Room C'), 0)
+		//Mobile.verifyElementExist(findTestObject('AT5 - Check Rooms/android.widget.CheckedTextView0 - Room C'), 0)
 	}
 
 	@Then("I can check the QoA in the various rooms")

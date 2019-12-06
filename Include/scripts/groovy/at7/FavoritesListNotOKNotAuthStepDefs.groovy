@@ -1,4 +1,4 @@
-package at6
+package at7
 import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
 import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
 import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
@@ -47,28 +47,40 @@ import cucumber.api.java.en.Then
 import cucumber.api.java.en.When
 
 
-import io.appium.java_client.AppiumDriver
-
-
-
-class TwitterShareNotOkStepDefs {
-	@When("I have connection issues")
-	def i_have_connection_issues() {
-		Mobile.toggleAirplaneMode('on')
+class FavoritesListNotOKNotAuthStepDefs {
+	@Given("I am not logged in")
+	def i_am_not_logged_in() {
+		Mobile.startExistingApplication(GlobalVariable.appID)
+		
+		Mobile.verifyElementExist(findTestObject('Dashboard Objects/android.widget.ImageButton0 Lateral button'), 0)
+		
+		Mobile.tap(findTestObject('Dashboard Objects/android.widget.ImageButton0 Lateral button'), 0)
+		
+		Mobile.verifyElementExist(findTestObject('Dashboard Objects/android.widget.TextView0 - Not logged in'), 0)
+		
+		Mobile.verifyElementText(findTestObject('Dashboard Objects/android.widget.TextView0 - Not logged in'), 'Not logged in')
+		
+		
 	}
 	
-	@Then("I cant share the message on twitter")
-	def i_cant_share_the_message_on_twitter() {
-		AppiumDriver<?> driver = MobileDriverFactory.getDriver()
+	@When("I check the lateral menu")
+	def i_check_the_lateral_menu() {
+		Mobile.verifyElementNotExist(findTestObject('AT7 - Favorites List Objects/android.widget.CheckedTextView0 - Favorites'), 2)
+	}
+	
+	@When("I see that there are no favorites menu")
+	def i_see_that_there_are_no_favorites_menu() {
 		
-		def toast = driver.findElementByXPath('//android.widget.Toast[@text=\'An error occurred while trying to send the Tweet!\']')
 		
-		println('Toast element: ' + toast)
+		Mobile.verifyElementNotExist(findTestObject('AT7 - Favorites List Objects/android.widget.TextView0 - FAVORITES'), 2)
 		
-		if (toast == null) {
-			KeywordUtil.markFailed('ERROR: Toast object not found!')
-		}
+		Mobile.verifyElementNotExist(findTestObject('AT7 - Favorites List Objects/android.widget.TextView0 - NO FAVORITES ADDED'), 2)
 		
+		
+	}
+	
+	@Then("I can check that only logged in users can have favorites")
+	def i_can_check_that_only_logged_in_users_can_have_favorites() {
 		Mobile.closeApplication()
 	}
 }
