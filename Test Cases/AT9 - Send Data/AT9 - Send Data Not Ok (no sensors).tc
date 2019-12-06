@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>AT9 - Send Data Not Ok (no sensors)</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>dc632dc6-3942-46b6-a56a-4243951f7053</testCaseGuid>
+</TestCaseEntity>
