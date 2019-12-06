@@ -63,11 +63,10 @@ class TwitterShareOKStepDefs {
 	
 	@When("I authorize the app for twitter")
 	def i_authorize_the_app_for_twitter() {
-		Mobile.verifyElementExist(findTestObject('AT6 - Twitter Objects/android.widget.Button0 - Authorize app'), 0)
-		
-		Mobile.tap(findTestObject('AT6 - Twitter Objects/android.widget.Button0 - Authorize app'), 0)
-		
-		
+		if(Mobile.verifyElementExist(findTestObject('AT6 - Twitter Objects/android.widget.Button0 - Authorize app'), 0)){
+			Mobile.tap(findTestObject('AT6 - Twitter Objects/android.widget.Button0 - Authorize app'), 0)
+		}
+				
 	}
 	
 	@When("edit the message to tweet")

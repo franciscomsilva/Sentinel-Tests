@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>FavoritsListNotOK - Not Logged IN</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>c7872505-2b58-4a49-a6b6-b046050248fe</testCaseGuid>
+</TestCaseEntity>
