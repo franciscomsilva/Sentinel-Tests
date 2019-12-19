@@ -31,15 +31,15 @@ Mobile.tap(findTestObject('AT3 Objects/android.widget.ImageButton0 Lateral Menu 
 
 Mobile.tap(findTestObject('AT7 - Favorites List Objects/android.widget.CheckedTextView0 - Favorites'), 0)
 
-Mobile.tap(findTestObject('AT8 - Favorites ADD-REMOVE/android.widget.Spinner0 FavoriteList'), 0)
+Mobile.tap(findTestObject('null'), 0)
 
-Mobile.tap(findTestObject('AT8 - Favorites ADD-REMOVE/android.widget.CheckedTextView0 - Room A'), 0)
+Mobile.tap(findTestObject('null'), 0)
 
-Mobile.tap(findTestObject('AT8 - Favorites ADD-REMOVE/android.widget.ImageButton0 ADD TO Favorites'), 0)
+Mobile.tap(findTestObject('null'), 0)
 
-Mobile.tap(findTestObject('AT8 - Favorites ADD-REMOVE/android.widget.ImageButton0 REMOVE'), 0)
+Mobile.tap(findTestObject('null'), 0)
 
-Mobile.tap(findTestObject('AT8 - Favorites ADD-REMOVE/android.widget.Button0 - OK'), 0)
+Mobile.tap(findTestObject('null'), 0)
 
 Mobile.verifyElementExist(findTestObject('AT7 - Favorites List Objects/android.widget.TextView0 - NO FAVORITES ADDED'), 
     0)
