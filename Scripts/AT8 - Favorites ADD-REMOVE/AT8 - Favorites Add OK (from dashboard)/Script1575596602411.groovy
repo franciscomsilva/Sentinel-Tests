@@ -31,13 +31,13 @@ Mobile.tap(findTestObject('AT5 - Check Rooms/android.widget.Spinner Room Change'
 
 Mobile.tap(findTestObject('AT5 - Check Rooms/android.widget.CheckedTextView0 - Room A'), 0)
 
-Mobile.tap(findTestObject('AT8 - Favorites ADD-REMOVE/android.widget.ImageButton0'), 0)
+Mobile.tap(findTestObject('null'), 0)
 
 Mobile.tap(findTestObject('AT3 Objects/android.widget.ImageButton0 Lateral Menu Button'), 0)
 
 Mobile.tap(findTestObject('AT7 - Favorites List Objects/android.widget.CheckedTextView0 - Favorites'), 0)
 
-Mobile.verifyElementExist(findTestObject('AT8 - Favorites ADD-REMOVE/android.widget.TextView0 - Room A (ADDED)'), 0)
+Mobile.verifyElementExist(findTestObject('null'), 0)
 
 Mobile.closeApplication()
 
