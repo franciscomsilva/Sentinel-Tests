@@ -63,6 +63,8 @@ class MyExposureRemoveOKStepDefs {
 		
 		Mobile.tap(findTestObject('AT10 - MY EXPOSURE/android.widget.ImageButton0 BUTTON ADD TO EXPOSURE'), 0)
 		
+		Mobile.verifyElementExist(findTestObject('AT10 - MY EXPOSURE/Snack bar Room added to My Exposure'), 0)
+		
 		Mobile.tap(findTestObject('AT3 Objects/android.widget.ImageButton0 Lateral Menu Button'), 0)
 		
 		Mobile.tap(findTestObject('AT10 - MY EXPOSURE/android.widget.CheckedTextView0 - My Exposure LatTab'), 0)

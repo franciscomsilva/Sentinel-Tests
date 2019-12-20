@@ -1,6 +1,16 @@
 [35m[Appium][39m Welcome to Appium v1.15.1
 [35m[Appium][39m Non-default server args:
 <<<<<<< HEAD
+[35m[Appium][39m   port: 54039
+[35m[Appium][39m   loglevel: info
+[35m[Appium][39m   chromeDriverPort: 54040
+[35m[Appium][39m   tmpDir: C:\Users\henri\AppData\Local\Temp\\Katalon\Appium\Temp1576842804770
+[35m[Appium][39m Appium REST http interface listener started on 0.0.0.0:54039
+[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/status[39m
+[35m[HTTP][39m [90m{}[39m
+[35m[HTTP][39m [37m<-- GET /wd/hub/status [39m[32m200[39m [90m11 ms - 68[39m
+=======
+<<<<<<< HEAD
 [35m[Appium][39m   port: 57726
 [35m[Appium][39m   loglevel: info
 [35m[Appium][39m   chromeDriverPort: 57727
@@ -19,6 +29,7 @@
 [35m[HTTP][39m [90m{}[39m
 [35m[HTTP][39m [37m<-- GET /wd/hub/status [39m[32m200[39m [90m11 ms - 68[39m
 >>>>>>> b7e113d59388a8c7d0c5dc87ffe7461cf292108f
+>>>>>>> 12d4132473f212cee9341d8b38b61a0d36501aff
 [35m[HTTP][39m [90m[39m
 [35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/status[39m
 [35m[HTTP][39m [90m{}[39m
@@ -26,10 +37,14 @@
 [35m[HTTP][39m [90m[39m
 [35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session[39m
 <<<<<<< HEAD
+[35m[HTTP][39m [90m{"desiredCapabilities":{"app":"E:\\Aulas\\3 Ano 1 Semestre\\TAES\\Projeto\\project\\app\\build\\outputs\\apk\\debug\\app-debug.apk","noReset":true,"newCommandTimeout":1800,"platformVersion":"P","autoGrantPermissions":true,"platformName":"Android","udid":"emulator-5554","deviceName":"emulator-5554 (Android SDK built for x86 - Android P)","fullReset":false,"platform":"ANDROID","systemPort":54045},"capabilities":{"firstMatch":[{"appium:app":"E:\\Aulas\\3 Ano 1 Semestre\\TAES\\Projeto\\project\\app\\build\\outputs\\apk\\debug\\app-debug.apk","appium:autoGrantPermissions":true,"appium:deviceName":"emulator-5554 (Android SDK built for x86 - Android P)","appium:fullReset":false,"appium:newCommandTimeout":1800,"appium:noReset":true,"platform":"ANDROID","platformName":"android","appium:platformVersion":"P","appium:systemPort":54045,"appium:udid":"emulator-5554"}]}}[39m
+=======
+<<<<<<< HEAD
 [35m[HTTP][39m [90m{"desiredCapabilities":{"app":"E:\\Aulas\\3 Ano 1 Semestre\\TAES\\Projeto\\project\\app\\build\\outputs\\apk\\debug\\app-debug.apk","noReset":true,"newCommandTimeout":1800,"platformVersion":"P","autoGrantPermissions":true,"platformName":"Android","udid":"emulator-5554","deviceName":"emulator-5554 (Android SDK built for x86 - Android P)","fullReset":false,"platform":"ANDROID","systemPort":57732},"capabilities":{"firstMatch":[{"appium:app":"E:\\Aulas\\3 Ano 1 Semestre\\TAES\\Projeto\\project\\app\\build\\outputs\\apk\\debug\\app-debug.apk","appium:autoGrantPermissions":true,"appium:deviceName":"emulator-5554 (Android SDK built for x86 - Android P)","appium:fullReset":false,"appium:newCommandTimeout":1800,"appium:noReset":true,"platform":"ANDROID","platformName":"android","appium:platformVersion":"P","appium:systemPort":57732,"appium:udid":"emulator-5554"}]}}[39m
 =======
 [35m[HTTP][39m [90m{"desiredCapabilities":{"app":"E:\\Aulas\\3 Ano 1 Semestre\\TAES\\Projeto\\project\\app\\build\\outputs\\apk\\debug\\app-debug.apk","noReset":true,"newCommandTimeout":1800,"platformVersion":"P","autoGrantPermissions":true,"platformName":"Android","udid":"emulator-5554","deviceName":"emulator-5554 (Android SDK built for x86 - Android P)","fullReset":false,"platform":"ANDROID","systemPort":49541},"capabilities":{"firstMatch":[{"appium:app":"E:\\Aulas\\3 Ano 1 Semestre\\TAES\\Projeto\\project\\app\\build\\outputs\\apk\\debug\\app-debug.apk","appium:autoGrantPermissions":true,"appium:deviceName":"emulator-5554 (Android SDK built for x86 - Android P)","appium:fullReset":false,"appium:newCommandTimeout":1800,"appium:noReset":true,"platform":"ANDROID","platformName":"android","appium:platformVersion":"P","appium:systemPort":49541,"appium:udid":"emulator-5554"}]}}[39m
 >>>>>>> b7e113d59388a8c7d0c5dc87ffe7461cf292108f
+>>>>>>> 12d4132473f212cee9341d8b38b61a0d36501aff
 [35m[BaseDriver][39m The capabilities ["platform"] are not standard capabilities and should have an extension prefix
 [35m[Appium][39m 
 [35m[Appium][39m ======================================================================
@@ -61,10 +76,14 @@
 [35m[BaseDriver][39m The following capabilities were provided, but are not recognized by Appium:
 [35m[BaseDriver][39m   platform
 <<<<<<< HEAD
+[35m[BaseDriver][39m Session created with session id: 901c4ac8-ab6e-4763-84e3-13937810fe84
+=======
+<<<<<<< HEAD
 [35m[BaseDriver][39m Session created with session id: a0c047e5-87ba-468d-8250-a9df6b8c8670
 =======
 [35m[BaseDriver][39m Session created with session id: 1bf3f7e6-06ad-480e-8564-a1db050263e0
 >>>>>>> b7e113d59388a8c7d0c5dc87ffe7461cf292108f
+>>>>>>> 12d4132473f212cee9341d8b38b61a0d36501aff
 [35m[BaseDriver][39m Using local app 'E:\Aulas\3 Ano 1 Semestre\TAES\Projeto\project\app\build\outputs\apk\debug\app-debug.apk'
 [35m[ADB][39m Found 1 'build-tools' folders under 'C:\Users\henri\.katalon\tools\android_sdk' (newest first):
 [35m[ADB][39m     C:/Users/henri/.katalon/tools/android_sdk/build-tools/29.0.2
@@ -81,14 +100,15 @@
 [35m[ADB][39m Cannot extract apk info using apkanalyzer. Falling back to aapt. Original error: Could not find 'apkanalyzer.bat' in ["C:\\Users\\henri\\.katalon\\tools\\android_sdk\\platform-tools\\apkanalyzer.bat","C:\\Users\\henri\\.katalon\\tools\\android_sdk\\emulator\\apkanalyzer.bat","C:\\Users\\henri\\.katalon\\tools\\android_sdk\\tools\\apkanalyzer.bat","C:\\Users\\henri\\.katalon\\tools\\android_sdk\\tools\\bin\\apkanalyzer.bat","C:\\Users\\henri\\.katalon\\tools\\android_sdk\\build-tools\\29.0.2\\apkanalyzer.bat"]. Do you have Android Build Tools installed at 'C:\Users\henri\.katalon\tools\android_sdk'?
 [35m[ADB][39m Using 'apksigner.bat' from 'C:\Users\henri\.katalon\tools\android_sdk\build-tools\29.0.2\apksigner.bat'
 [35m[UiAutomator2][39m Server packages are not going to be (re)installed
-<<<<<<< HEAD
-=======
 [35m[ADB][39m Got an error during apksigner execution: Command 'apksigner.bat verify --print-certs 'E:\\Aulas\\3 Ano 1 Semestre\\TAES\\Projeto\\project\\app\\build\\outputs\\apk\\debug\\app-debug.apk'' exited with code 1
 [35m[ADB][39m apksigner stderr: DOES NOT VERIFY
 [35m[ADB][39m ERROR: No JAR signatures
 [35m[ADB][39m 
 [35m[ADB][39m Using 'zipalign.exe' from 'C:\Users\henri\.katalon\tools\android_sdk\build-tools\29.0.2\zipalign.exe'
+<<<<<<< HEAD
+=======
 >>>>>>> b7e113d59388a8c7d0c5dc87ffe7461cf292108f
+>>>>>>> 12d4132473f212cee9341d8b38b61a0d36501aff
 [35m[ADB][39m Cannot extract apk info using apkanalyzer. Falling back to aapt. Original error: Could not find 'apkanalyzer.bat' in ["C:\\Users\\henri\\.katalon\\tools\\android_sdk\\platform-tools\\apkanalyzer.bat","C:\\Users\\henri\\.katalon\\tools\\android_sdk\\emulator\\apkanalyzer.bat","C:\\Users\\henri\\.katalon\\tools\\android_sdk\\tools\\apkanalyzer.bat","C:\\Users\\henri\\.katalon\\tools\\android_sdk\\tools\\bin\\apkanalyzer.bat","C:\\Users\\henri\\.katalon\\tools\\android_sdk\\build-tools\\29.0.2\\apkanalyzer.bat"]. Do you have Android Build Tools installed at 'C:\Users\henri\.katalon\tools\android_sdk'?
 [35m[UiAutomator2][39m Starting UIAutomator2 server 4.3.0
 [35m[UiAutomator2][39m Using UIAutomator2 server from 'C:\Users\henri\AppData\Roaming\npm\node_modules\appium\node_modules\appium-uiautomator2-server\apks\appium-uiautomator2-server-v4.3.0.apk' and test from 'C:\Users\henri\AppData\Roaming\npm\node_modules\appium\node_modules\appium-uiautomator2-server\apks\appium-uiautomator2-server-debug-androidTest.apk'
@@ -98,6 +118,18 @@
 [35m[WD Proxy][39m Determined the downstream protocol as 'W3C'
 [35m[AndroidDriver][39m Screen already unlocked, doing nothing
 [35m[UiAutomator2][39m Starting 'pt.ipleiria.estg.dei.sentinel/pt.ipleiria.estg.dei.sentinel.activities.MainActivity and waiting for 'pt.ipleiria.estg.dei.sentinel/pt.ipleiria.estg.dei.sentinel.activities.MainActivity'
+<<<<<<< HEAD
+[35m[Appium][39m New AndroidUiautomator2Driver session created successfully, session 901c4ac8-ab6e-4763-84e3-13937810fe84 added to master session list
+[35m[HTTP][39m [37m<-- POST /wd/hub/session [39m[32m200[39m [90m14727 ms - 1294[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/901c4ac8-ab6e-4763-84e3-13937810fe84[39m
+[35m[HTTP][39m [90m{}[39m
+[35m[HTTP][39m [37m<-- GET /wd/hub/session/901c4ac8-ab6e-4763-84e3-13937810fe84 [39m[32m200[39m [90m31 ms - 1226[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/901c4ac8-ab6e-4763-84e3-13937810fe84[39m
+[35m[HTTP][39m [90m{}[39m
+[35m[HTTP][39m [37m<-- GET /wd/hub/session/901c4ac8-ab6e-4763-84e3-13937810fe84 [39m[32m200[39m [90m13 ms - 1226[39m
+=======
 <<<<<<< HEAD
 [35m[Appium][39m New AndroidUiautomator2Driver session created successfully, session a0c047e5-87ba-468d-8250-a9df6b8c8670 added to master session list
 [35m[HTTP][39m [37m<-- POST /wd/hub/session [39m[32m200[39m [90m13133 ms - 1294[39m
@@ -121,10 +153,52 @@
 [35m[HTTP][39m [90m{}[39m
 [35m[HTTP][39m [37m<-- GET /wd/hub/session/1bf3f7e6-06ad-480e-8564-a1db050263e0 [39m[32m200[39m [90m16 ms - 1226[39m
 >>>>>>> b7e113d59388a8c7d0c5dc87ffe7461cf292108f
+>>>>>>> 12d4132473f212cee9341d8b38b61a0d36501aff
 [35m[HTTP][39m [90m[39m
 [35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/status[39m
 [35m[HTTP][39m [90m{}[39m
 [35m[HTTP][39m [37m<-- GET /wd/hub/status [39m[32m200[39m [90m1 ms - 68[39m
+<<<<<<< HEAD
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/901c4ac8-ab6e-4763-84e3-13937810fe84/timeouts[39m
+[35m[HTTP][39m [90m{"implicit":60000}[39m
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/901c4ac8-ab6e-4763-84e3-13937810fe84/timeouts [39m[32m200[39m [90m3 ms - 14[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/901c4ac8-ab6e-4763-84e3-13937810fe84/source[39m
+[35m[HTTP][39m [90m{}[39m
+[35m[W3C (901c4ac8)][39m Driver proxy active, passing request on via HTTP proxy
+[35m[WD Proxy][39m Replacing sessionId 23721480-be49-4923-8671-ac180cf71af2 with 901c4ac8-ab6e-4763-84e3-13937810fe84
+[35m[HTTP][39m [37m<-- GET /wd/hub/session/901c4ac8-ab6e-4763-84e3-13937810fe84/source [39m[32m200[39m [90m265 ms - 8993[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/901c4ac8-ab6e-4763-84e3-13937810fe84/screenshot[39m
+[35m[HTTP][39m [90m{}[39m
+[35m[HTTP][39m [37m<-- GET /wd/hub/session/901c4ac8-ab6e-4763-84e3-13937810fe84/screenshot [39m[32m200[39m [90m319 ms - 76248[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/901c4ac8-ab6e-4763-84e3-13937810fe84/source[39m
+[35m[HTTP][39m [90m{}[39m
+[35m[W3C (901c4ac8)][39m Driver proxy active, passing request on via HTTP proxy
+[35m[WD Proxy][39m Replacing sessionId 23721480-be49-4923-8671-ac180cf71af2 with 901c4ac8-ab6e-4763-84e3-13937810fe84
+[35m[HTTP][39m [37m<-- GET /wd/hub/session/901c4ac8-ab6e-4763-84e3-13937810fe84/source [39m[32m200[39m [90m176 ms - 10845[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/901c4ac8-ab6e-4763-84e3-13937810fe84/screenshot[39m
+[35m[HTTP][39m [90m{}[39m
+[35m[HTTP][39m [37m<-- GET /wd/hub/session/901c4ac8-ab6e-4763-84e3-13937810fe84/screenshot [39m[32m200[39m [90m322 ms - 75114[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/901c4ac8-ab6e-4763-84e3-13937810fe84/source[39m
+[35m[HTTP][39m [90m{}[39m
+[35m[W3C (901c4ac8)][39m Driver proxy active, passing request on via HTTP proxy
+[35m[WD Proxy][39m Replacing sessionId 23721480-be49-4923-8671-ac180cf71af2 with 901c4ac8-ab6e-4763-84e3-13937810fe84
+[35m[HTTP][39m [37m<-- GET /wd/hub/session/901c4ac8-ab6e-4763-84e3-13937810fe84/source [39m[32m200[39m [90m535 ms - 10845[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/901c4ac8-ab6e-4763-84e3-13937810fe84/screenshot[39m
+[35m[HTTP][39m [90m{}[39m
+[35m[HTTP][39m [37m<-- GET /wd/hub/session/901c4ac8-ab6e-4763-84e3-13937810fe84/screenshot [39m[32m200[39m [90m329 ms - 87718[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mDELETE[39m [37m/wd/hub/session/901c4ac8-ab6e-4763-84e3-13937810fe84[39m
+[35m[HTTP][39m [90m{}[39m
+[35m[Appium][39m Removing session 901c4ac8-ab6e-4763-84e3-13937810fe84 from our master session list
+[35m[HTTP][39m [37m<-- DELETE /wd/hub/session/901c4ac8-ab6e-4763-84e3-13937810fe84 [39m[32m200[39m [90m309 ms - 14[39m
+=======
 [35m[HTTP][39m [90m[39m
 <<<<<<< HEAD
 [35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/a0c047e5-87ba-468d-8250-a9df6b8c8670/timeouts[39m
@@ -227,4 +301,5 @@
 [35m[Appium][39m Removing session 1bf3f7e6-06ad-480e-8564-a1db050263e0 from our master session list
 [35m[HTTP][39m [37m<-- DELETE /wd/hub/session/1bf3f7e6-06ad-480e-8564-a1db050263e0 [39m[32m200[39m [90m317 ms - 14[39m
 >>>>>>> b7e113d59388a8c7d0c5dc87ffe7461cf292108f
+>>>>>>> 12d4132473f212cee9341d8b38b61a0d36501aff
 [35m[HTTP][39m [90m[39m

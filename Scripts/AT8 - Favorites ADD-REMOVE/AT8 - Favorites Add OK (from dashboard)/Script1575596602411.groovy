@@ -21,9 +21,9 @@ Mobile.tap(findTestObject('AT3 Objects/android.widget.ImageButton0 Lateral Menu 
 
 Mobile.tap(findTestObject('AT3 Objects/android.widget.CheckedTextView0 - Login'), 0)
 
-Mobile.setText(findTestObject('AT3 Objects/android.widget.EditText0 - E-mail'), 'email@gmail.com', 0)
+Mobile.setText(findTestObject('AT3 Objects/android.widget.EditText0 - E-mail'), 'testeprofile@gmail.com', 0)
 
-Mobile.setText(findTestObject('AT3 Objects/android.widget.EditText0 - Password'), '123456', 0)
+Mobile.setText(findTestObject('AT3 Objects/android.widget.EditText0 - Password'), 'password!1', 0)
 
 Mobile.tap(findTestObject('AT3 Objects/android.widget.ImageButton0 Login Button'), 0)
 

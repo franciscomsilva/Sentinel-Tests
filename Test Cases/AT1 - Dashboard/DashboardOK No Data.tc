@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>AT8 - Favorites Add OK (from Favorites Tab)</name>
+   <name>DashboardOK No Data</name>
    <tag></tag>
    <comment></comment>
-   <testCaseGuid>e6546e9a-d905-4ede-8ae8-31fa4260ac79</testCaseGuid>
+   <testCaseGuid>c72fbb39-3fe1-4960-9848-c3960c997704</testCaseGuid>
 </TestCaseEntity>
