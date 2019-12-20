@@ -40,3 +40,5 @@ Mobile.verifyElementExist(findTestObject('AT5 - Check Rooms/android.widget.Check
 
 Mobile.closeApplication()
 
+
+
