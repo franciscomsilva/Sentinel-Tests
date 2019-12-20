@@ -41,8 +41,7 @@ Mobile.verifyElementExist(findTestObject('Dashboard Objects/android.widget.TextV
 
 Mobile.verifyElementText(findTestObject('Dashboard Objects/android.widget.TextView0 - Edificio A'), 'Edificio A')
 
-Mobile.verifyElementNotExist(findTestObject('Dashboard Objects/android.widget.TextView0 - No Data Found In Edificio A'), 
-    1)
+Mobile.verifyElementExist(findTestObject('Dashboard Objects/android.widget.TextView0 - No Data Found In Edificio A'), 0)
 
 Mobile.closeApplication()
 

@@ -54,6 +54,7 @@ import io.appium.java_client.AppiumDriver
 class TwitterShareNotOkStepDefs {
 	@When("I have connection issues")
 	def i_have_connection_issues() {
+		//doesnt work but the user is supposed to turn wifi and data off for this to actually work
 		Mobile.toggleAirplaneMode('on')
 	}
 	

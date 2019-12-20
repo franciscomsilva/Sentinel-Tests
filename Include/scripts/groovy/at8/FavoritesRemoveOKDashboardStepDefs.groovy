@@ -67,17 +67,19 @@ class FavoritesRemoveOKDashboardStepDefs {
 		Mobile.tap(findTestObject('AT5 - Check Rooms/android.widget.CheckedTextView0 - Room A'), 0)
 		
 		Mobile.tap(findTestObject('AT8 - Favorites ADD-REMOVE/android.widget.ImageButton0'), 0)
+		
+		Mobile.tap(findTestObject('AT8 - Favorites ADD-REMOVE/android.widget.Button0 - OK'), 0)
+		
 	}
-	
+
 	@Then("I can check that It was removed from the favorites list")
 	def i_can_check_that_It_was_removed_from_the_favorites_list() {
 		Mobile.tap(findTestObject('AT3 Objects/android.widget.ImageButton0 Lateral Menu Button'), 0)
 		
 		Mobile.tap(findTestObject('AT7 - Favorites List Objects/android.widget.CheckedTextView0 - Favorites'), 0)
 		
-		Mobile.verifyElementText(findTestObject('AT7 - Favorites List Objects/android.widget.TextView0 - NO FAVORITES ADDED'), 'NO FAVORITES ADDED!')
+		Mobile.verifyElementExist(findTestObject('AT8 - Favorites ADD-REMOVE/NO FAVORITES ADDED'), 0)
 		
 		Mobile.closeApplication()
 	}
-	
 }

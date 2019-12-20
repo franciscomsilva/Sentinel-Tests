@@ -62,11 +62,11 @@ class LogoutOKStepDefs {
 		
 		Mobile.verifyElementExist(findTestObject('AT3 Objects/android.widget.EditText0 - E-mail'), 0)
 
-		Mobile.setText(findTestObject('AT3 Objects/android.widget.EditText0 - E-mail'), 'email@gmail.com', 0)
+		Mobile.setText(findTestObject('AT3 Objects/android.widget.EditText0 - E-mail'), 'testeprofile@gmail.com', 0)
 
 		Mobile.verifyElementExist(findTestObject('AT3 Objects/android.widget.EditText0 - Password'), 0)
 		
-		Mobile.setText(findTestObject('AT3 Objects/android.widget.EditText0 - Password'), '123456', 0)
+		Mobile.setText(findTestObject('AT3 Objects/android.widget.EditText0 - Password'), 'password!1', 0)
 		
 		Mobile.verifyElementExist(findTestObject('AT3 Objects/android.widget.ImageButton0 Login Button'), 0)
 
