@@ -39,10 +39,6 @@ Mobile.tap(findTestObject('AT7 - Favorites List Objects/android.widget.CheckedTe
 
 Mobile.verifyElementExist(findTestObject('AT8 - Favorites ADD-REMOVE/android.widget.TextView0 - Room A (ADDED)'), 0)
 
-Mobile.tap(findTestObject('AT8 - Favorites ADD-REMOVE/android.widget.ImageButton0 REMOVE'), 0)
-
-Mobile.tap(findTestObject('AT8 - Favorites ADD-REMOVE/android.widget.Button0 - OK'), 0)
-
 Mobile.verifyElementExist(findTestObject('AT8 - Favorites ADD-REMOVE/NO FAVORITES ADDED'), 0)
 
 Mobile.tap(findTestObject('AT3 Objects/android.widget.ImageButton0 Lateral Menu Button'), 0)

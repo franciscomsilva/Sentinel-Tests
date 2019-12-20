@@ -15,29 +15,3 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 
-Mobile.startExistingApplication(GlobalVariable.appID, FailureHandling.STOP_ON_FAILURE)
-
-Mobile.tap(findTestObject('AT3 Objects/android.widget.ImageButton0 Lateral Menu Button'), 0)
-
-Mobile.tap(findTestObject('AT3 Objects/android.widget.CheckedTextView0 - Login'), 0)
-
-Mobile.setText(findTestObject('AT3 Objects/android.widget.EditText0 - E-mail'), 'testeprofile@gmail.com', 0)
-
-Mobile.setText(findTestObject('AT3 Objects/android.widget.EditText0 - Password'), 'password!1', 0)
-
-Mobile.tap(findTestObject('AT3 Objects/android.widget.ImageButton0 Login Button'), 0)
-
-Mobile.tap(findTestObject('AT5 - Check Rooms/android.widget.Spinner Room Change'), 0)
-
-Mobile.tap(findTestObject('AT5 - Check Rooms/android.widget.CheckedTextView0 - Room A'), 0)
-
-Mobile.tap(findTestObject('null'), 0)
-
-Mobile.tap(findTestObject('AT3 Objects/android.widget.ImageButton0 Lateral Menu Button'), 0)
-
-Mobile.tap(findTestObject('AT7 - Favorites List Objects/android.widget.CheckedTextView0 - Favorites'), 0)
-
-Mobile.verifyElementExist(findTestObject('null'), 0)
-
-Mobile.closeApplication()
-

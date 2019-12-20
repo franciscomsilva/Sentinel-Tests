@@ -51,40 +51,38 @@ class FavoritesRemoveOKFavTabStepDefs {
 	@When("I click in the X next to the room I want to unfavorite")
 	def i_click_in_the_X_next_to_the_room_I_want_to_unfavorite() {
 		Mobile.tap(findTestObject('AT3 Objects/android.widget.ImageButton0 Lateral Menu Button'), 0)
-		
+
 		Mobile.tap(findTestObject('Dashboard Objects/android.widget.CheckedTextView0 - Dashboard'), 0)
-		
+
 		Mobile.tap(findTestObject('AT5 - Check Rooms/android.widget.Spinner Room Change'), 0)
-		
+
 		Mobile.tap(findTestObject('AT5 - Check Rooms/android.widget.CheckedTextView0 - Room A'), 0)
-		
+
 		Mobile.tap(findTestObject('AT8 - Favorites ADD-REMOVE/android.widget.ImageButton0'), 0)
-		
+
 		Mobile.tap(findTestObject('AT3 Objects/android.widget.ImageButton0 Lateral Menu Button'), 0)
-		
+
 		Mobile.tap(findTestObject('AT7 - Favorites List Objects/android.widget.CheckedTextView0 - Favorites'), 0)
-		
+
 		Mobile.verifyElementExist(findTestObject('AT8 - Favorites ADD-REMOVE/android.widget.TextView0 - Room A (ADDED)'), 0)
-		
+
 		Mobile.tap(findTestObject('AT8 - Favorites ADD-REMOVE/android.widget.ImageButton0 REMOVE'), 0)
-		
+
 		Mobile.tap(findTestObject('AT8 - Favorites ADD-REMOVE/android.widget.Button0 - OK'), 0)
-		
 	}
-	
+
 	@Then("I can check that It was removed from the favorites list both sides")
 	def i_can_check_that_It_was_removed_from_the_favorites_list_both_sides() {
 		Mobile.verifyElementExist(findTestObject('AT8 - Favorites ADD-REMOVE/NO FAVORITES ADDED'), 0)
-		
+
 		Mobile.tap(findTestObject('AT3 Objects/android.widget.ImageButton0 Lateral Menu Button'), 0)
-		
+
 		Mobile.tap(findTestObject('Dashboard Objects/android.widget.CheckedTextView0 - Dashboard'), 0)
-		
+
 		Mobile.tap(findTestObject('AT5 - Check Rooms/android.widget.Spinner Room Change'), 0)
-		
+
 		Mobile.tap(findTestObject('AT5 - Check Rooms/android.widget.CheckedTextView0 - Room A'), 0)
-		
+
 		Mobile.closeApplication()
 	}
-	
 }

@@ -27,35 +27,25 @@ Mobile.setText(findTestObject('AT3 Objects/android.widget.EditText0 - Password')
 
 Mobile.tap(findTestObject('AT3 Objects/android.widget.ImageButton0 Login Button'), 0)
 
-Mobile.tap(findTestObject('AT5 - Check Rooms/android.widget.Spinner Room Change'), 0)
-
-Mobile.tap(findTestObject('AT5 - Check Rooms/android.widget.CheckedTextView0 - Room A'), 0)
-
-Mobile.tap(findTestObject('null'), 0)
-
 Mobile.tap(findTestObject('AT3 Objects/android.widget.ImageButton0 Lateral Menu Button'), 0)
 
-Mobile.tap(findTestObject('AT7 - Favorites List Objects/android.widget.CheckedTextView0 - Favorites'), 0)
+Mobile.tap(findTestObject('Dashboard Objects/android.widget.ImageButton0 Lateral button'), 0)
 
-Mobile.verifyElementExist(findTestObject('null'), 0)
+Mobile.verifyElementExist(findTestObject('AT14 Objects/Profile LatTab'), 0)
 
-Mobile.tap(findTestObject('AT3 Objects/android.widget.ImageButton0 Lateral Menu Button'), 0)
+Mobile.tap(findTestObject('AT14 Objects/Profile LatTab'), 0)
 
-Mobile.tap(findTestObject('Dashboard Objects/android.widget.CheckedTextView0 - Dashboard'), 0)
+Mobile.verifyElementExist(findTestObject('AT14 Objects/Current Password TextBox'), 0)
 
-Mobile.tap(findTestObject('AT5 - Check Rooms/android.widget.Spinner Room Change'), 0)
+Mobile.setText(findTestObject('AT14 Objects/Current Password TextBox'), 'password!1', 0)
 
-Mobile.tap(findTestObject('AT5 - Check Rooms/android.widget.CheckedTextView0 - Room A'), 0)
+Mobile.setText(findTestObject('AT14 Objects/Email Change TextBox'), '', 0)
 
-Mobile.tap(findTestObject('null'), 0)
+Mobile.setText(findTestObject('AT14 Objects/Email Change TextBox'), 'testprofile@gmail.com', 5)
 
-Mobile.tap(findTestObject('AT8 - Favorites ADD-REMOVE/android.widget.Button0 - OK'), 0)
+Mobile.tap(findTestObject('AT14 Objects/SAVE Profile Changes'), 0, FailureHandling.STOP_ON_FAILURE)
 
-Mobile.tap(findTestObject('AT3 Objects/android.widget.ImageButton0 Lateral Menu Button'), 0)
-
-Mobile.tap(findTestObject('AT7 - Favorites List Objects/android.widget.CheckedTextView0 - Favorites'), 0)
-
-Mobile.verifyElementExist(findTestObject('AT8 - Favorites ADD-REMOVE/NO FAVORITES ADDED'), 0)
+Mobile.verifyElementExist(findTestObject('AT14 Objects/Success - Profile updated successfully'), 0, FailureHandling.STOP_ON_FAILURE)
 
 Mobile.closeApplication()
 

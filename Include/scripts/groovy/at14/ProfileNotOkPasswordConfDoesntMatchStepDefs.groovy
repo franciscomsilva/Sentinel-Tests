@@ -1,4 +1,4 @@
-package at8
+package at14
 import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
 import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
 import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
@@ -7,7 +7,7 @@ import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
 import com.kms.katalon.core.annotation.Keyword
 import com.kms.katalon.core.checkpoint.Checkpoint
 import com.kms.katalon.core.checkpoint.CheckpointFactory
-import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords
+import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as Mobile
 import com.kms.katalon.core.model.FailureHandling
 import com.kms.katalon.core.testcase.TestCase
 import com.kms.katalon.core.testcase.TestCaseFactory
@@ -15,14 +15,10 @@ import com.kms.katalon.core.testdata.TestData
 import com.kms.katalon.core.testdata.TestDataFactory
 import com.kms.katalon.core.testobject.ObjectRepository
 import com.kms.katalon.core.testobject.TestObject
-import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords
-import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords
+import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
+import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 
 import internal.GlobalVariable
-
-import MobileBuiltInKeywords as Mobile
-import WSBuiltInKeywords as WS
-import WebUiBuiltInKeywords as WebUI
 
 import org.openqa.selenium.WebElement
 import org.openqa.selenium.WebDriver
@@ -47,28 +43,24 @@ import cucumber.api.java.en.Then
 import cucumber.api.java.en.When
 
 
-class FavoritesAddOKDashboardStepDefs {
-	@When("at the dashboard")
-	def at_the_dashboard() {
-		Mobile.tap(findTestObject('AT5 - Check Rooms/android.widget.Spinner Room Change'), 0)
 
-		Mobile.tap(findTestObject('AT5 - Check Rooms/android.widget.CheckedTextView0 - Room A'), 0)
+class ProfileNotOkPasswordConfDoesntMatchStepDefs {
+	@When("I input a new password")
+	def i_input_a_new_password() {
+		Mobile.setText(findTestObject('AT14 Objects/New Password TextBox'), 'password!1', 0)
 	}
-
-	@When("I click in the star next to the room I want to favorite")
-	def i_click_in_the_star_next_to_the_room_I_want_to_favorite() {
-
-		Mobile.tap(findTestObject('AT8 - Favorites ADD-REMOVE/android.widget.ImageButton0'), 0)
+	
+	@When("I input a different new password confirmation")
+	def i_input_a_different_new_password_confirmation() {
+		Mobile.setText(findTestObject('AT14 Objects/New Password Confirmation TextBox'), 'password!2', 0)
 	}
-
-	@Then("I can check that It was added to the favorites list")
-	def i_can_check_that_It_was_added_to_the_favorites_list() {
-		Mobile.tap(findTestObject('AT3 Objects/android.widget.ImageButton0 Lateral Menu Button'), 0)
-
-		Mobile.tap(findTestObject('AT7 - Favorites List Objects/android.widget.CheckedTextView0 - Favorites'), 0)
-
-		Mobile.verifyElementExist(findTestObject('AT8 - Favorites ADD-REMOVE/android.widget.TextView0 - Room A (ADDED)'), 0)
-
+	
+	@Then("I dont update my password")
+	def i_dont_update_my_password() {
+		Mobile.tap(findTestObject('AT14 Objects/SAVE Profile Changes'), 0)
+		
+		Mobile.verifyElementExist(findTestObject('AT14 Objects/Erro - Password Confirmation doesnt match password'), 0)
+		
 		Mobile.closeApplication()
 	}
 }
