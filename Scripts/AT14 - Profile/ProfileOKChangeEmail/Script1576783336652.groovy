@@ -41,7 +41,7 @@ Mobile.setText(findTestObject('AT14 Objects/Current Password TextBox'), 'passwor
 
 Mobile.setText(findTestObject('AT14 Objects/Email Change TextBox'), '', 0)
 
-Mobile.setText(findTestObject('AT14 Objects/Email Change TextBox'), 'testprofile@gmail.com', 0)
+Mobile.setText(findTestObject('AT14 Objects/Email Change TextBox'), 'testprofile@gmail.com', 5)
 
 Mobile.tap(findTestObject('AT14 Objects/SAVE Profile Changes'), 0, FailureHandling.STOP_ON_FAILURE)
 
