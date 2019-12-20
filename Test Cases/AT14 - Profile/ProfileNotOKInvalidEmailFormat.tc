@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>ProfileNotOKInvalidEmailFormat</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>cba4031f-f6c1-4f14-bbf4-d84d1021fffb</testCaseGuid>
+</TestCaseEntity>

@@ -62,11 +62,11 @@ class LogoutOKStepDefs {
 		
 		Mobile.verifyElementExist(findTestObject('AT3 Objects/android.widget.EditText0 - E-mail'), 0)
 
-		Mobile.setText(findTestObject('AT3 Objects/android.widget.EditText0 - E-mail'), 'email@gmail.com', 0)
+		Mobile.setText(findTestObject('AT3 Objects/android.widget.EditText0 - E-mail'), 'testeprofile@gmail.com', 0)
 
 		Mobile.verifyElementExist(findTestObject('AT3 Objects/android.widget.EditText0 - Password'), 0)
 		
-		Mobile.setText(findTestObject('AT3 Objects/android.widget.EditText0 - Password'), '123456', 0)
+		Mobile.setText(findTestObject('AT3 Objects/android.widget.EditText0 - Password'), 'password!1', 0)
 		
 		Mobile.verifyElementExist(findTestObject('AT3 Objects/android.widget.ImageButton0 Login Button'), 0)
 
@@ -77,7 +77,8 @@ class LogoutOKStepDefs {
 	def i_click_the_logout_button() {
 		Mobile.tap(findTestObject('AT3 Objects/android.widget.ImageButton0 Lateral Menu Button'), 0)
 
-		Mobile.verifyElementExist(findTestObject('AT3 Objects/android.widget.TextView0 - emailgmail.com'), 0)
+		//IDK HOW TO USE THIS BECAUSE THE OBJECT IS DEPENDENT ON THE EMAIL IT IS ATTACHED TO SO I CANT EVER CHECK THIS AUTOMATICALLY, HAVING TO CHANGE IT MANUALLY EVERYTIME, IM PROBALBY DOING SOMETHING WRONG
+		//Mobile.verifyElementExist(findTestObject('AT3 Objects/android.widget.TextView0 - emailgmail.com'), 0)
 
 		Mobile.verifyElementExist(findTestObject('AT4 - Logout/android.widget.CheckedTextView0 - Logout'), 0)
 
