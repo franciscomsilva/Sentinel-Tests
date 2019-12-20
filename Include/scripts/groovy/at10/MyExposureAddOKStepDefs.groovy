@@ -62,6 +62,8 @@ class MyExposureAddOKStepDefs {
 		Mobile.tap(findTestObject('Dashboard Objects/android.widget.CheckedTextView0 - Dashboard'), 0)
 		
 		Mobile.tap(findTestObject('AT10 - MY EXPOSURE/android.widget.ImageButton0 BUTTON ADD TO EXPOSURE'), 0)
+		
+		Mobile.verifyElementExist(findTestObject('AT10 - MY EXPOSURE/Snack bar Room added to My Exposure'), 0)
 	}
 	
 	@Then("It is added to My Exposure list")
