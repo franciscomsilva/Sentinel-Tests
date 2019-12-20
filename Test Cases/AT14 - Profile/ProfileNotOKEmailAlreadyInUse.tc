@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>ProfileNotOKEmailAlreadyInUse</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>a330afca-37e2-4684-adbd-e3f02bc8a782</testCaseGuid>
+</TestCaseEntity>
